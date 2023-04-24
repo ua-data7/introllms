@@ -1,0 +1,142 @@
+site_name: 'GPT 101'
+site_description: 'Documentation for prompt engineering'
+site_author: 'Tyson L Swetnam'
+site_url: https://tyson-swetnam.github.io/intro2llms
+
+# Repository
+repo_name: intro2llms
+repo_url: https://github.com/tyson-swetnam/intro2llms
+edit_uri: edit/main/docs/
+# Copyright
+copyright: 'Copyright &copy; 2023 Tyson Lee Swetnam'
+
+# Page tree
+nav:
+  - Home: index.md
+  - OpenAI: 
+    - ChatGPT Prompt Enginering: chatgpt_prompts.md
+    - Using the API: openai_api.md
+    - GitHub CoPilot: github_copilot.md
+    - Extensions: openai_extensions.md
+  - HuggingFace: 
+    - Models: huggingface_models.md
+    - Datasets: huggingface_datasets.md
+    - Gradio: huggingface_gradio.md
+  - AI Enabled Browsers:
+    - Bing: bing.md  
+    - Bard: bard.md
+  - Privately developed apps:
+    - Research: private_research.md
+
+# Configuration
+imgwidth: 70px;
+theme:
+  highlightjs: true
+  name: material
+  font:
+    text: 'Open Sans'
+    code: 'Roboto Mono'
+  logo: 'assets/cyverse_ball_2022.png'
+  favicon: 'assets/favicon.ico'
+# setting features for the navigation tab
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - toc.follow
+    - content.code.copy
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  # custom_dir: 'overrides'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: white)"
+      primary: 'white'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to system preference
+
+# Options
+extra:
+  social:
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0002-6639-7181
+    - icon: simple/googlescholar  
+      link: https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en
+    - icon: fontawesome/brands/github
+      link: https://github.com/tyson-swetnam/
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@tswetnam  
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/tswetnam
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tyson-swetnam
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/tswetnam
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ
+  analytics:
+    provider: google
+    property: G-NYETZFD8DN
+  
+# Extensions
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
+ 
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - mkdocs-jupyter:
+          include_source: True
+          ignore_h1_titles: True
