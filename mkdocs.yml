@@ -8,7 +8,7 @@ repo_name: intro2llms
 repo_url: https://github.com/tyson-swetnam/intro2llms
 edit_uri: edit/main/docs/
 # Copyright
-copyright: 'Copyright &copy; 2023 Tyson Lee Swetnam'
+copyright: 'Copyright &copy; 2023 University of Arizona Data Science Institute'
 
 # Page tree
 nav:
@@ -36,7 +36,7 @@ theme:
   font:
     text: 'Open Sans'
     code: 'Roboto Mono'
-  logo: 'assets/cyverse_ball_2022.png'
+  logo: 'assets/uarizona.png'
   favicon: 'assets/favicon.ico'
 # setting features for the navigation tab
   features:

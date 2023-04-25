@@ -1,5 +1,28 @@
 # Prompt Engineering
 
+When can you use ChatGPT for research and education? 
+
+``` mermaid
+graph TB
+  A((Start)) --> B("Does it matter if the outputs are true?  &nbsp");
+  B -->| No | F("Safe to use ChatGPT");
+  B -->| Yes | C("Do you have the ability to verify outputs truth and accuracy? &nbsp &nbsp");
+  C -->| Yes | D("Understand legal and moral responsibility of your errors?  &nbsp &nbsp");
+  C -->| No | E("Unsafe to use ChatGPT");
+  D -->| Yes | F("Safe to use ChatGPT");
+  D -->| No | E("Unsafe to use ChatGPT");
+
+  style A fill:#2ECC71,stroke:#fff,stroke-width:2px,color:#fff
+  style B fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
+  style C fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
+  style D fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
+  style E fill:#C0392B,stroke:#fff,stroke-width:2px,color:#fff
+  style F fill:#2ECC71,stroke:#fff,stroke-width:2px,color:#fff
+```
+
+Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial Intelligence in Education, UNESCO 2023 :fontawesome-regular-file-pdf:](https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf)
+
+
 !!! Success "Writing ChatGPT Prompts"
         
     Strategies to keep in mind when writing prompts.
@@ -17,7 +40,7 @@
 
     When you go to [https://chat.openai.com](){target=_blank} you will be redirected to sign in or sign up. 
 
-    If you have a Microsoft account affiliated with an institutional email address, we suggest you use it.
+    If you have a Microsoft account affiliated institutional email address, we suggest you use it.
 
     !!! success "ChatGPT Plus"
 
@@ -25,7 +48,9 @@
 
         Paying $20 / month for a "ChatGPT Plus" account will eliminate the wait, and give access to ChatGPT `GPT-4` (currently throttled to 25 responses every 3 hours).
 
-## :simple-openai: Prompt Writing
+## How does ChatGPT Work?
+
+Read the [:simple-openai: ChatGPT Documentation](https://openai.com/blog/chatgpt){target=_blank}
 
 ChatGPT's `GPT-3.5-turbo` and `GPT-v4` models use natural language prompts to elicit contextual responses. 
 
@@ -33,11 +58,25 @@ ChatGPT can respond with either langauge (prose) or computer code.
 
 Other LLM models (like [DALL-E](https://openai.com/product/dall-e-2){target=_blank} or [MidJourney](https://www.midjourney.com/){target=_blank}) produce images based on prompts.
 
+ChatGPT uses a form of syntax called [MarkDown](){target=_blank}
+
+!!! Tip "Grant ChatGPT access to the Internet"
+
+    By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
+
+    There are extension tools, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend ChatGPT's reach to the internet.
+
+    What you're actually doing with this extension is automating the creation of a much larger promt message, which includes hyperlinks to resources on the internet.
+
+## :simple-openai: Prompt Writing
+
 ### **Types**
 
 ChatGPT asks for a message to begin its conversation. These messages are called "Prompts". 
 
-Setting up the conversation with the appropriate type prompt will help narrow ChatGPT's potential response and improve results to subsequent prompts. 
+Begin a conversation with a specific type of prompt. This will help narrow the potential range of responses and improve results to subsequent prompts. 
+
+We are specifically working with ChatGPT in this section, but the same prompt types and traits can be used in all other LLMs.
 
 ??? Tip "ChatGPT :simple-awesomelists: Awesome Lists"
 
@@ -52,7 +91,30 @@ Setting up the conversation with the appropriate type prompt will help narrow Ch
 
 **Role-based**
 
-Set the role you want ChatGPT to play with you during your prompting session, "I want you to act as ..." will establish what type of conversation you are planning to have. Examples of roles you might ask for are: a domain science expert, an IT or DevOps engineer, software programmer, journal editor, paper reviewer, mentor, teacher, or student. You can even instruct ChatGPT to respond as though it were a Linux [terminal](https://www.engraved.blog/building-a-virtual-machine-inside/){target=_blank}, a web browser, a search engine, or language interpreter.
+Set the role for ChatGPT to play during your session. 
+
+"I want you to act as ..." will establish what type of conversation you are planning to have. 
+
+Examples of roles you might ask for are: a domain science expert, an IT or DevOps engineer, software programmer, journal editor, paper reviewer, mentor, teacher, or student. You can even instruct ChatGPT to respond as though it were a Linux [terminal](https://www.engraved.blog/building-a-virtual-machine-inside/){target=_blank}, a web browser, a search engine, or language interpreter.
+
+??? Abstract "ChatGPT as a Research Software Guru"
+
+    Let's try an example prompt with role-playing to help write code in the R programming language.
+
+    ```markdown
+    I want you to act as a research software guru of deep the programming language R 
+    and its extension libraries based on the TidyVerse and RStudio. 
+    Please output any code results for the R language as markdown syntax blocks 
+    that I can copy and paste into my RStudio environment. Ideally I would like R code 
+    to be written in RMD or Quarto syntax. It is also okay to use BASH or Linux 
+    commands to help install dependencies for the software.
+
+    I want you to write the code required to plot the regression of body mass, 
+    bill length, and width for the species of Penguins in the Palmer Penguins dataset. 
+    You will need to download the Palmer Penguins dataset and then create the RMD notebook.
+    ```
+
+    Example can use `GPT-3.5-Turbo` or `GPT-4`
 
 **Question and Answer**
 
@@ -150,6 +212,3 @@ By default, ChatGPT is not connected to the web, and will not produce results fr
 There are several extensions (browser plugins, stand alone applications) for ChatGPT which generate its results directly from the published scientific literature.
 
 Again, this is no guaruntee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
-
-[WebChatGPT](https://www.webchatgpt.app/)
-

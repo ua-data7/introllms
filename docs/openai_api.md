@@ -42,7 +42,18 @@
 
 ## OpenAI API
 
+!!! Tip "Get on the OpenAI GPT-4 API waitlist"
+
+    API access to `GPT-4` is in high demand, OpenAI has created a waitlist for being granted access.
+
+    To get on the waitlist, go to: [https://openai.com/waitlist/gpt-4-api](https://openai.com/waitlist/gpt-4-api){target=_blank} 
+
+    Make sure you use an academic email address and clearly specify what your use cases are.
+
+    **Important** `GPT-4` and beta models use large numbers of tokens per run. Current limits for `GPT-4-8K` has a context length of 8,192 tokens, and `GPT-4-32K` goes up to 32,768 tokens which works out to about 50 pages of text. Google Bard only accepts 2,048 tokens.
+
 Check out the [:simple-github: openai/openai-cookbook](https://github.com/openai/openai-cookbook){target=_blank} repository for :simple-jupyter: Jupyter Notebook lessons on using OpenAI API
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=468576060&machine=basicLinux32gb&location=EastUs)
 
+[:simple-openai: OpenAI Playground](https://platform.openai.com/playground){target=_blank} allows you to work with a range of OpenAI models for Chat, Text Completion, Image generation, Embedding, Speech-to-Text, and Fine Tuning your own models.
