@@ -25,9 +25,9 @@ Predictive text and auto completion are becoming more common in productivity sof
 
 ChatGPT is integrated into Microsoft's Edge Browser via [Bing Chat](https://www.bing.com/new?form=MY0291&OCID=MY0291){target=_blank}. Google's competitor, [LaMDA](https://blog.google/technology/ai/lamda/), is featured in [Bard](https://bard.google.com/){target=_blank}. 
 
-:material-run-fast: Go to our lesson on  on [:material-microsoft-edge: Edge Bing](bing.md)
+:material-run-fast: Go to our lesson on [:material-microsoft-edge: Edge Bing](bing.md)
 
-:material-run-fast: Go to our lesson on  [:simple-googlechrome: Bard](bard.md) 
+:material-run-fast: Go to our lesson on [:simple-googlechrome: Bard](bard.md) 
 
 ## Research Applications
 

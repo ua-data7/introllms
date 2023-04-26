@@ -6,7 +6,7 @@ When can you use ChatGPT for research and education?
 graph TB
   A((Start)) --> B("Does it matter if the outputs are true?  &nbsp");
   B -->| No | F("Safe to use ChatGPT");
-  B -->| Yes | C("Do you have the ability to verify outputs truth and accuracy? &nbsp &nbsp");
+  B -->| Yes | C("Do you have the ability to verify output truth and accuracy? &nbsp &nbsp");
   C -->| Yes | D("Understand legal and moral responsibility of your errors?  &nbsp &nbsp");
   C -->| No | E("Unsafe to use ChatGPT");
   D -->| Yes | F("Safe to use ChatGPT");
@@ -29,12 +29,11 @@ Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and A
 
     | Ws | Reasons |
     |----|---------|
-    | Who | do you want ChatGPT to be while responding: a teacher, an engineer, an editor, or a student? |
-    | What | is the specific context of your prompt? |
-    | When | is the specific time period of interest? |
-    | Where | is the geographic or conceptual area that ChatGPT shold focus on? Tell it where to go looking for answers |
-    | in what way| do you want ChatGPT to respond? Are you asking for language, software code, or specific references? |
-    | by what means | do you want ChatGPT to respond? 
+    | Who | do you want ChatGPT to role-play: an engineer, an editor, a teacher, or a student? |
+    | What | is the specific context of your prompts? |
+    | When | is the specific time period of interest? Specify if so. |
+    | Where | is the geographic region or conceptual area? |
+    | In what way | do you want ChatGPT to respond? Are you asking for language, software code, or specific references? |
 
 ??? info "Create a ChatGPT account"
 
@@ -59,14 +58,6 @@ ChatGPT can respond with either langauge (prose) or computer code.
 Other LLM models (like [DALL-E](https://openai.com/product/dall-e-2){target=_blank} or [MidJourney](https://www.midjourney.com/){target=_blank}) produce images based on prompts.
 
 ChatGPT uses a form of syntax called [MarkDown](){target=_blank}
-
-!!! Tip "Grant ChatGPT access to the Internet"
-
-    By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
-
-    There are extension tools, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend ChatGPT's reach to the internet.
-
-    What you're actually doing with this extension is automating the creation of a much larger promt message, which includes hyperlinks to resources on the internet.
 
 ## :simple-openai: Prompt Writing
 
@@ -102,12 +93,12 @@ Examples of roles you might ask for are: a domain science expert, an IT or DevOp
     Let's try an example prompt with role-playing to help write code in the R programming language.
 
     ```markdown
-    I want you to act as a research software guru of deep the programming language R 
-    and its extension libraries based on the TidyVerse and RStudio. 
-    Please output any code results for the R language as markdown syntax blocks 
-    that I can copy and paste into my RStudio environment. Ideally I would like R code 
-    to be written in RMD or Quarto syntax. It is also okay to use BASH or Linux 
-    commands to help install dependencies for the software.
+    I want you to act as a research software guru with complete knowledge of the R language 
+    and its libraries in the TidyVerse and the integrated development environment RStudio. 
+    
+    Please output any code results in R as MarkDown syntax code blocks in R MarkDown format 
+    Ideally I would like R code to be written in RMD or Quarto syntax. 
+    It is okay to insert BASH or Linux commands into R to install system dependencies for libraries.
 
     I want you to write the code required to plot the regression of body mass, 
     bill length, and width for the species of Penguins in the Palmer Penguins dataset. 
@@ -120,11 +111,35 @@ Examples of roles you might ask for are: a domain science expert, an IT or DevOp
 
 Prompts which return informative responses to questions like "What is ..." or "How does ..."
 
+Because of ChatGPT's proclivity at making up information, using it without a way of validating the authenticity of its responses makes it less trustworthy than regular search engines. 
+
+Bing and Bard fill an important space in these types of prompts - they return websites which match the query criterion and allow you to research your own answers.
+
+There are extension tools for ChatGPT which allows you to prompt with references.
+
+!!! Tip "Grant ChatGPT access to the Internet"
+
+    By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
+
+    There are extension tools, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend ChatGPT's reach to the internet.
+
+    What you're actually doing with this extension is automating the creation of a much larger promt message, which includes hyperlinks to resources on the internet.
+
 **Instructional**
 
 You can also ask ChatGPT to explain complex topics or to act as a cook-book step-by-step guide. 
 
 ChatGPT can provide instructional details about how to do specific tasks. 
+
+??? Abstract "ChatGPT as a documentation writer"
+
+    ```markdown
+    I want you to act as a DIY expert. You will help me develop the skills necessary 
+    to complete simple lab documentation, create tutorials and guides for beginners and experts, 
+    and explain complex concepts in layman's terms using visual techniques, and develop helpful resources.
+
+    I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
+    ```
 
 ### **Traits**
 
@@ -148,16 +163,85 @@ Responses to prompts may not return the exact details or information that you ar
 
 ## :simple-openai: Software Development
 
-ChatGPT is trained on langauges, including software language. While there are other generative AI (like [GitHub CoPilot](github_copilot.md) which we cover in a separate section), ChatGPT does a good job of helping to debug or write code with some caveats.
+ChatGPT is trained on langauges, including software language. Use ChatGPT as your new paired-programming AI assistant. 
+
+:material-run-fast: Go to our lesson on  [:octicons-copilot-48: GitHub CoPilot](github_copilot.md)
 
 For novice programmers, ChatGPT likely fills a long unfilled hole in your knowledge map. It can write code faster than you can, and with the proper prompts, create programs in minutes which may have taken you hours or days. 
 
+??? Abstract "ChatGPT as Data Scientist"
+
+    ChatGPT is trained on common data science languages, like Python, Julia, and R. Use ChatGPT to help develop basic code or to explain and debug code you're trying to write. 
+
+    Using ChatGPT can be a time savings, reducing the time it takes to look for the answers yourself over conventional search.
+
+    ```markdown
+    I want you to act as a humble data scientist who works a lot with Python and scientific visualization
+
+    Create a Python script which generates a visually pleasing and compelling heat map for a CSV dataset
+    ```
+
+    You can also use it to summarize code or to help explain its operation
+
+    ```markdown
+    I want you to act as a humble data scientist who works a lot with Linux 
+
+    Explain to me what the following code does:
+
+    $ find /home/www \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i 's/subdomainA\.example\.com/subdomainB.example.com/g'
+    ```
+
+    Other valuable uses:
+    
+    * Change variable names and file names! When you have a large dataset with many files and folder names, you can ask ChatGPT to help design a schema for renaming your project's content
+
+    * Regular Expressions, or `regex` is a bane of many programmers. ChatGPT can write, edit, and explain complex `regex`
+
+    ```markdown
+    I want you to act as a regex generator. Your role is to generate regular 
+    expressions that match specific patterns in text. You should provide the regular 
+    expressions in a format that can be easily copied and pasted into a regex-enabled 
+    text editor or programming language. Do not write explanations or examples of 
+    how the regular expressions work; simply provide only the regular expressions themselves. 
+
+    remove any numbers from a string and replace them with a capital X
+    ```
+
 For more advanced programmers, ChatGPT's weaknesses may become apparent when optimizing or linting complex code bases. However, there are already extension tools which can evaluate code performance and make changes or suggestions. 
+
+??? Abstract "ChatGPT as DevOps"
+
+    ChatGPT can automate tasks and write tests
+
+    ```markdown
+    I want you to act as a DevOps engineer who specializes in SQL and Docker.
+
+    I am running an Ubuntu 22.04 server with a dockerized web service which appears to have a memory leak. Write a unit test for the PostgreSQL web server using SQL, JSON, or Python that can find the process which is causing the leak and restart the docker-compose service.
+    ```
+
+    You can also use ChatGPT to help optimize your code's performance.
+
+    ```markdown
+    Make this code run faster and use less memory using BASH
+
+     ```
+     import os 
+     # folder path
+     dir_path = os.getcwd()
+     # list to store files
+     res = [] 
+     # Iterate directory
+     for path in os.listdir(dir_path):
+         # check if current path is a file
+         if os.path.isfile(os.path.join(dir_path, path)):
+             res.append(path)
+     print(res)
+     ```
+    ```
 
 ## :simple-openai: Word Processing
 
 **Outlining**
-
 
 
 **Editing**
@@ -211,4 +295,19 @@ By default, ChatGPT is not connected to the web, and will not produce results fr
 
 There are several extensions (browser plugins, stand alone applications) for ChatGPT which generate its results directly from the published scientific literature.
 
-Again, this is no guaruntee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
+??? Abstract "Research scholarly articles"
+
+    With the [WebChatGPT](https://www.webchatgpt.app/) Chrome or FireFox extension enabled, ChatGPT can search websites for content to questions.
+
+    What is really happening is that WebChatGPT is annotating your prompt upon execution with a list of web search results which match your prompt question.
+
+    ```markdown
+    /site:scholar.google.com,https://users.math.yale.edu/mandelbrot/webbooks/wb_multi.html
+
+    I want you to respond as though you are the mathematician Benoit Mandelbrot
+
+    Explain the relationship of lacunarity and fractal dimension for a self-affine series
+    ```
+
+
+Again, this is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
