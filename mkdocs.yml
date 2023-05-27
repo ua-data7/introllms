@@ -19,15 +19,17 @@ nav:
     - Using the API: openai_api.md
     - GitHub CoPilot: github_copilot.md
     - Extensions: openai_extensions.md
+  - Search & Chat:
+    - Bing: bing.md  
+    - Bard: bard.md
+  - Productivity:
+    - Daily Productivity: daily-productivity.md
+  - External Applications:
+    - Research: private_research.md
   - HuggingFace: 
     - Models: huggingface_models.md
     - Datasets: huggingface_datasets.md
-    - Gradio: huggingface_gradio.md
-  - Search Engines:
-    - Bing: bing.md  
-    - Bard: bard.md
-  - External Applications:
-    - Research: research.md
+    - Gradio: huggingface_gradio.md  
 
 # Configuration
 imgwidth: 70px;
