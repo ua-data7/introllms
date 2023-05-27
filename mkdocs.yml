@@ -1,11 +1,11 @@
 site_name: 'GPT 101'
-site_description: 'Documentation for prompt engineering'
-site_author: 'Tyson L Swetnam'
-site_url: https://tyson-swetnam.github.io/intro2llms
+site_description: 'Documentation for Prompt Engineering 101 Workshop'
+site_author: 'University of Arizona Data Sciences Institute'
+site_url: https://ua-data7.github.io/introllms
 
 # Repository
-repo_name: intro2llms
-repo_url: https://github.com/tyson-swetnam/intro2llms
+repo_name: introllms
+repo_url: https://github.com/ua-data7/introllms
 edit_uri: edit/main/docs/
 # Copyright
 copyright: 'Copyright &copy; 2023 University of Arizona Data Science Institute'
@@ -13,6 +13,7 @@ copyright: 'Copyright &copy; 2023 University of Arizona Data Science Institute'
 # Page tree
 nav:
   - Home: index.md
+  - Workshop Agenda: agenda.md
   - OpenAI: 
     - ChatGPT Prompt Enginering: chatgpt_prompts.md
     - Using the API: openai_api.md
@@ -22,11 +23,11 @@ nav:
     - Models: huggingface_models.md
     - Datasets: huggingface_datasets.md
     - Gradio: huggingface_gradio.md
-  - AI Enabled Browsers:
+  - Search Engines:
     - Bing: bing.md  
     - Bard: bard.md
-  - Privately developed apps:
-    - Research: private_research.md
+  - External Applications:
+    - Research: research.md
 
 # Configuration
 imgwidth: 70px;
@@ -70,26 +71,9 @@ theme:
 # Options
 extra:
   social:
-    - icon: fontawesome/brands/orcid
-      link: https://orcid.org/0000-0002-6639-7181
-    - icon: simple/googlescholar  
-      link: https://scholar.google.com/citations?user=nanIeAYAAAAJ&hl=en
     - icon: fontawesome/brands/github
-      link: https://github.com/tyson-swetnam/
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@tswetnam  
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/tswetnam
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/tyson-swetnam
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/u/tswetnam
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UC5xPt9KZHccC0ehMNEkINzQ
-  analytics:
-    provider: google
-    property: G-NYETZFD8DN
-  
+      link: https://github.com/ua-data7/
+ 
 # Extensions
 markdown_extensions:
   - admonition

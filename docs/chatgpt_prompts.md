@@ -161,6 +161,12 @@ Responses to prompts may not return the exact details or information that you ar
 
 "Chain prompting"
 
+??? Danger "Indirect Prompt Injection and Malware"
+
+    One of the risks of allowing LLMs and GPTs to access our personal documents and email clients involves the use of malware and malicious attacks.
+
+    [Indirect prompt injection](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
+
 ## :simple-openai: Software Development
 
 ChatGPT is trained on langauges, including software language. Use ChatGPT as your new paired-programming AI assistant. 
