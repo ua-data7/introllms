@@ -2,14 +2,14 @@
 
 Introduction to AI prompt engineering
 
-[![pages-build-deployment](https://github.com/tyson-swetnam/intro2llms/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/tyson-swetnam/intro2llms/actions/workflows/pages/pages-build-deployment)
+[![Publish docs via GitHub](https://github.com/ua-data7/introllms/actions/workflows/main.yml/badge.svg)](https://github.com/ua-data7/introllms/actions/workflows/main.yml)
 
 Built using [MkDocs](https://www.mkdocs.org/) with [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 
 
 # Build instructions
 
 ```
-git clone https://github.com/tyson-swetnam/intro2llms
+git clone https://github.com/ua-data7/introllms
 
 cd intro2llms
 
