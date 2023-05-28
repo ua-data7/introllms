@@ -94,8 +94,8 @@ time (excludes Protected Health Information in compliance with HIPAA).
 Any user violating this Code may be expelled from the platform and the
 workshop at DSI's sole discretion without warning.
 
-To report a violation of this Code, directly speak a trainer, if you are not comfortable
-speaking to a trainer, or the trainer is being reported email <info@cyverse.org> with the following information:
+To report a violation of this Code, directly speak to a trainer. If you are not comfortable
+speaking to a trainer, or the trainer is who you are reporting, email <info@cyverse.org> with the following information:
 
 -   Your contact information
 -   Names (real, username, pseudonyms) of any individuals involved, and
