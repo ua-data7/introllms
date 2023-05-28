@@ -2,6 +2,8 @@
 
 ![banner](assets/dailyprod-banner.png){width=1000}
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 What tasks do you do every day? What are your daily habits? Where are the pain points that you can improve? Where do you spend time that you wish you had back? 
 
 ## Advanced Prompt Engineering

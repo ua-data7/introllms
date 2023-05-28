@@ -14,11 +14,11 @@ copyright: 'Copyright &copy; 2023 University of Arizona Data Science Institute'
 nav:
   - Home: index.md
   - Workshop Agenda: agenda.md
-  - OpenAI: 
-    - ChatGPT Prompt Enginering: chatgpt_prompts.md
-    - Using the API: openai_api.md
-    - GitHub CoPilot: github_copilot.md
-    - Extensions: openai_extensions.md
+  - Prompt Engineering: 
+    - Basic Prompt Enginering: chatgpt_prompts.md
+    - Using APIs: openai_api.md
+    - Coding with CoPilot: github_copilot.md
+    - OpenAI extensions: openai_extensions.md
   - Search & Chat:
     - Bing: bing.md  
     - Bard: bard.md

@@ -4,6 +4,8 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
+## [:material-run-fast: Go to 5/31/2023 Workshop Agenda](agenda.md)
+
 Welcome to our documentation on generative Artificial Intelligence (AI) prompt engineering and application integration in academic research and education.
 
 !!! Success "Learning Objectives"
@@ -75,6 +77,8 @@ Read about [OpenAI Educator Considerations](https://platform.openai.com/docs/cha
 
     **CoPilot** - GitHub (Microsoft/OpenAI) AI co-programmer, natively integrated as an extension in VS Code or GitHub CodeSpaces
 
+    **Embeddings** - process of transforming high-dimensional data, such as text or images, into low-dimensional vectors. Embeddings allow us to quantify the meaning and relationships of data. 
+     
     **Generative Pretrained Transformer (GPT)** - are a family of large language models, which was introduced in 2018 by the American artificial intelligence organization OpenAI [:simple-wikipedia:](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer). [(Radford et al. :simple-arxiv:)](https://www.cs.ubc.ca/~amuham01/LING530/papers/radford2018improving.pdf){target=_blank}
 
     **GitHub** - the most widely used Version Control infrastructure, owned by Microsoft and natively integrated with OpenAI
@@ -102,6 +106,8 @@ Read about [OpenAI Educator Considerations](https://platform.openai.com/docs/cha
     **Segment-Anything (Meta)** - is a recently released image and video segmentation technology that allows you to 'clip' a feature from an image with a single click. 
 
     **Stable Diffusion** - computer vision models for creating images from text
+
+    **Token** - a fundamental unit of text that GPT models use to process and generate language. A token can represent an individual character, a word, or a subword depending on the specific tokenization approach.
 
     **Tuning** - the process of refining models to become more accurate
 

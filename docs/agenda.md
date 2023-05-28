@@ -1,4 +1,4 @@
-# Agenda
+# 5/31/2023 Workshop Agenda
 
 ![banner](assets/banner3_ai.png){width=1000}
 
@@ -31,36 +31,34 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 
 ## Agenda
 
-| Lessons | Estimated Time to Complete | Link |
-|---------|----------------------------|------|
-| Introductions & [Code of Conduct](#code-of-conduct) | 5 minutes | [HackMD Notes](https://tinyurl.com/ua-chatgpt101-notes){target=_blank} |
-| [Session 1: Introduction to Large Language Models](chatgpt_prompts.md#how-does-chatgpt-work) | 10 minutes | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| [Session 2: Effective Prompt Engineering](chatgpt_prompts.md#simple-openai-prompt-writing) | 15 minutes | [:simple-openai: ChatGPT](https://chat.openai.com){target=_blank} |
-| [Session 2: Research and Data Analysis](chatgpt_prompts.md#simple-openai-academic-research) | 20 minutes | |
-| Break | 10 minutes | |
-| [Session 3: Daily Use & Productivity](chatgpt_prompts.md#simple-openai-word-processing) | 25 minutes | |
-| [Session 4: Teaching & Ethics](chatgpt_prompts.md) | 25 minutes | |
-| Lunch | 60 minutes | |  
-| [Session 5: Research & Plugins](chatgpt_prompts.md#simple-openai-software-development) | 25 minutes |  | 
-| [Session 6: OpenAI API & HuggingFace Apps ](openai_api.md) | 25 minutes | |
-| Review & Debrief | 10 minutes | | 
+| :fontawesome-solid-hourglass-half: | Lessons | Estimated Time to Complete | Link |
+|------------------------------------|---------|----------------------------|------|
+| 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | 5 minutes | [HackMD Notes](https://tinyurl.com/ua-chatgpt101-notes){target=_blank} |
+| 09:05 | [Session 1: Introduction to Large Language Models](chatgpt_prompts.md#how-does-chatgpt-work) | 15 minutes | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
+| 09:20| [Session 2: Effective Prompt Engineering](chatgpt_prompts.md#simple-openai-prompt-writing) | 30 minutes | [:simple-openai: ChatGPT](https://chat.openai.com){target=_blank} |
+| 09:50 | Break | 10 minutes | |
+| 10:00 | [Session 3: Daily Use & Productivity](chatgpt_prompts.md#simple-openai-word-processing) | 25 minutes | |
+| 10:25 | [Session 4: Teaching & Ethics](chatgpt_prompts.md) | 25 minutes | |
+| 11:00 | Lunch | 60 minutes | |  
+| 12:00 | [Session 5: Research & Plugins](chatgpt_prompts.md#simple-openai-software-development) | 25 minutes |  | 
+| 12:25 | [Session 6: OpenAI API & HuggingFace Apps ](openai_api.md) | 25 minutes | |
+| 12:50 | Review & Debrief | 10 minutes | | 
 
 ## Pre-requisites
 
-* a laptop with an active wifi connection
-* Create a free account on [ChatGPT](https://chat.openai.com){target=_blank}
+:material-check: a laptop with an active wifi connection
+
+:material-check: Create a free [ChatGPT](https://chat.openai.com){target=_blank} account
 
 **Optional**
 
-* a paid [ChatGPT Plus account (plugins are currently waitlisted)](https://openai.com/blog/chatgpt-plugins){target=_blank}
-* a paid [OpenAI API account (currently waitlisted)](https://share.hsforms.com/1u4goaXwDRKC9-x9IvKno0A4sk30){target=_blank} 
-* a personal Google account (to access [Bard](https://bard.google.com){target=_blank} - suggest using [Chrome Browser](https://www.google.com/chrome/))
-* Install the [Microsoft Edge Browser](https://www.microsoft.com/en-us/edge){target=_blank} for using Microsoft Bing w/ Chat
+:material-check: a personal Google account (to access [Bard](https://bard.google.com){target=_blank} - suggest using [Chrome Browser](https://www.google.com/chrome/))
 
-### helpful but not required
+:material-check: Install the [Microsoft Edge Browser](https://www.microsoft.com/en-us/edge){target=_blank} for using Microsoft Bing w/ Chat
 
-* a basic understanding of the [Command Line Interface (UNIX)](https://swcarpentry.github.io/shell-novice/){target=_blank}
-* a basic understanding of [Python3](https://www.geeksforgeeks.org/introduction-to-python3/#:~:text=Python%20is%20a%20high%2Dlevel,them%20readable%20all%20the%20time.){target=_blank}
+:heavy_dollar_sign: [ChatGPT Plus account (plugins are currently waitlisted)](https://openai.com/blog/chatgpt-plugins){target=_blank}
+
+:heavy_dollar_sign: [OpenAI API account (currently waitlisted)](https://share.hsforms.com/1u4goaXwDRKC9-x9IvKno0A4sk30){target=_blank} 
 
 ## Code of Conduct
 
