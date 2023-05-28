@@ -24,7 +24,34 @@ graph TB
   style F fill:#2ECC71,stroke:#fff,stroke-width:2px,color:#fff
 ```
 
-Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial Intelligence in Education, UNESCO 2023 :fontawesome-regular-file-pdf:](https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf)
+Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial Intelligence in Education, UNESCO 2023 :fontawesome-regular-file-pdf:](https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf){target=_blank}
+
+??? Question "Is it ethical to use GPTs?"
+
+    The last six months has seen a rash of cases around the mis-use and illegal applications of GPTs and LLMs.
+
+    There are [deep ethical concerns about the use of AI](https://www.sciencefriday.com/segments/ai-open-letter-chatgpt-ethics/){target=_blank} like GPT and LLMs, particularly concerning their training data.
+
+    ChatGPT has effectively gamified higher education, is biased, can lie, and is being used to spread disinformation and hate speech. It also effectively steals designs, visual art, and music styles. 
+
+    [European Union's proposed AI Act legislation](https://www.cnbc.com/2023/05/15/eu-ai-act-europe-takes-aim-at-chatgpt-with-landmark-regulation.html){target=_blank}
+
+    [Class Action: GitHub CoPilot trained on private repositories](https://githubcopilotlitigation.com/){target=_blank}
+
+    [MidJourney and Dall-E using trademarked imagery and art](https://www.artnews.com/art-in-america/features/midjourney-ai-art-image-generators-lawsuit-1234665579/){target=_blank}
+
+    [A lawyer submits a legal brief written by ChatGPT and is caught](https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html){target=_blank}
+
+    [College students using ChatGPT](https://ethicspolicy.unc.edu/news/2023/04/17/the-ethics-of-college-students-using-chatgpt/){target=_blank}
+
+    ??? Tip "Ethics of Artificial Intelligence"
+
+        * [The Asilomar AI Principles (2017)](https://futureoflife.org/open-letter/ai-principles/){target=_blank}
+
+        * [A Unified Framework of Five Principles for AI in Society](https://doi.org/10.1162%2F99608f92.8cd550d1){target=_blank} 
+
+        * [Ethics of Artificial Intelligence (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence){target=_blank}
+
 
 ??? info "Create a ChatGPT account"
 
@@ -46,8 +73,9 @@ Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and A
 
 Read the [:simple-openai: ChatGPT Documentation](https://openai.com/blog/chatgpt){target=_blank}
 
-Read the [:fontawesome-regular-file-pdf: ChatGPT Technical Report](
-https://doi.org/10.48550/arXiv.2303.08774){target=_blank}
+Read the [:fontawesome-regular-file-pdf: ChatGPT Technical Report](https://doi.org/10.48550/arXiv.2303.08774){target=_blank}
+
+Read the [:fontawesome-regular-file-pdf: Bard Documentation](https://ai.google/static/documents/google-about-bard.pdf){target=_blank}
 
 ChatGPT's `GPT-3.5-turbo` and `GPT-v4` models use natural language prompts to elicit contextual responses. 
 
@@ -89,7 +117,7 @@ Responses are more likely to be useful when multiple specific output types are d
 
 !!! Tip "How long can or should a prompt be?"
 
-    The length of a prompt is measured in "tokens". A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
+    The length of a prompt is [measured in "tokens"](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/unlocking-the-power-of-tokens-optimizing-token-usage-in-gpt-for/ba-p/3826665{target=_blank}). A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
 
     Currently, ChatGPT version `GPT-3.5turbo` uses up to 2,048 tokens per prompt, GPT-4 and Bing Chat can take up to 32,768 tokens.
     

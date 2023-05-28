@@ -10,7 +10,15 @@
 
 ### Location 
 
-[Health Sciences Innovation Building](https://goo.gl/maps/REmCthF25znRFa7f8){target=_blank}  Room # 531
+**[Health Sciences Innovation Building](https://goo.gl/maps/REmCthF25znRFa7f8){target=_blank}  Classroom # 531**
+
+Enter through the east entrance and take elevators or stairs to the fifth floor. 
+
+There is a galley kitchen and lounge on the northeast side of the floor with refrigerator. 
+
+Coffee, tea, water, and refreshements will be provided in the lounge. 
+
+No food or drinks in the classrooms, please.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3374.7116878831707!2d-110.94982652402594!3d32.238928673893106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671a7b5176c53%3A0x67880bc15138eb29!2sHealth%20Sciences%20Innovation%20Building%20(HSIB)!5e0!3m2!1sen!2sus!4v1685220356093!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -37,10 +45,10 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 | 09:05 | [Session 1: Introduction to Large Language Models](chatgpt_prompts.md#how-does-chatgpt-work) | 15 minutes | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
 | 09:20| [Session 2: Effective Prompt Engineering](chatgpt_prompts.md#simple-openai-prompt-writing) | 30 minutes | [:simple-openai: ChatGPT](https://chat.openai.com){target=_blank} |
 | 09:50 | Break | 10 minutes | |
-| 10:00 | [Session 3: Daily Use & Productivity](chatgpt_prompts.md#simple-openai-word-processing) | 25 minutes | |
+| 10:00 | [Session 3: Daily Use & Productivity](daily-productivity.md) | 25 minutes | |
 | 10:25 | [Session 4: Teaching & Ethics](chatgpt_prompts.md) | 25 minutes | |
 | 11:00 | Lunch | 60 minutes | |  
-| 12:00 | [Session 5: Research & Plugins](chatgpt_prompts.md#simple-openai-software-development) | 25 minutes |  | 
+| 12:00 | [Session 5: Research & Plugins](private_research.md) | 25 minutes |  | 
 | 12:25 | [Session 6: OpenAI API & HuggingFace Apps ](openai_api.md) | 25 minutes | |
 | 12:50 | Review & Debrief | 10 minutes | | 
 
