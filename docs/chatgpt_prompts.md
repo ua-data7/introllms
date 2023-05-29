@@ -70,14 +70,7 @@ Other LLM models (like [DALL-E](https://openai.com/product/dall-e-2){target=_bla
 
 ChatGPT uses a syntax called [MarkDown :octicons-markdown-16:](https://www.markdownguide.org/){target=_blank}. Markdown is plain text that uses special characters for formatting. 
 
-This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python.
-
-??? info "Language Model Family Tree"
-
-    [![tree](assets/tree.jpeg){width=800}](https://arxiv.org/abs/2304.13712){target=_blank}
-    
-    Image Credit: [Yang et al. :simple-arxiv:](https://arxiv.org/abs/2304.13712){target=_blank} examine the history of LLMs 
-
+This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python. 
 
 ## :simple-openai: Prompt Writing
 
@@ -206,13 +199,15 @@ Bing and Bard fill an important space in these types of prompts - they return we
 
 There are extension tools for ChatGPT which allows you to prompt with references.
 
-!!! Tip "Access to the Internet"
+!!! Tip "Access the Internet"
 
     By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
 
-    There are extension tools, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend ChatGPT's reach to the internet.
+    There are third-party extensions, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend OpenAI ChatGPT's reach to the internet.
 
-    What you're actually doing with this extension is automating the creation of a much larger promt message, which includes hyperlinks to resources on the internet.
+    We presently recommend using [:material-microsoft-bing: Bing Chat](bing.md) with Edge Browser instead of ChatGPT 3.5 for prompting which works with the internet.
+
+    [:simple-google: Bard](bard.md) also has access to the web and limited integration with Google Workspace.
 
 #### **Format**
 

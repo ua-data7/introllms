@@ -1,6 +1,10 @@
-# University Education in the era of AI
+# AI in the classroom
 
-## How can you use AI in the classroom?
+Thinking about integrating ChatGPT and OpenAI into your coursework?
+
+There are already a large list of potentail uses for ChatGPT in higher education
+
+Read about [:simple-openai: OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt){target=_blank}
 
 ChatGPT's `GPT-3.5-turbo` and `GPT-4` models can compose essays and pass advanced knowledge assessments [(OpenAI :simple-arxiv:)](https://doi.org/10.48550/arXiv.2303.08774){target=_blank}.  Online education, a recent and lucrative innovation in academia, now faces challenges regarding effective remote student assessment [(Susnjak :simple-arxiv:)](https://doi.org/10.48550/arXiv.2212.09292){target=_blank}. 
 

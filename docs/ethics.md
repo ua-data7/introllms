@@ -20,7 +20,7 @@ ChatGPT has effectively gamified higher education, is biased, can lie, and is be
 
 !!! Tip "Ethics of Artificial Intelligence"
 
-    * [The Asilomar AI Principles (2017)](https://futureoflife.org/open-letter/ai-principles/){target=_blank
+    * [The Asilomar AI Principles (2017)](https://futureoflife.org/open-letter/ai-principles/){target=_blank}
     
     * [A Unified Framework of Five Principles for AI in Society](https://doi.org/10.1162%2F99608f92.8cd550d1){target=_blank}
     

@@ -13,29 +13,30 @@ Welcome to our documentation on generative Artificial Intelligence (AI) prompt e
         After the lesson, you should be able to:
         
         * Explain why generative AI matters in education, research, and society
-        * Create effective prompts in ChatGPT and other Transformer applications
-        * Create your own AI-powered applications using Gradio
-        * Understand how and when to use AI assistants 
+        * Create effective prompts in ChatGPT, Bing, Bard, and other GPTs
+        * Understand how and when to use AI assistants in your daily work
 
-## General Productivity Applications
+## Getting Started
+
+:material-run-fast: Getting Started with [:simple-openai: ChatGPT](chatgpt.md)
+
+:material-run-fast: Getting Started with [:material-microsoft-edge: Bing Chat](bing.md)
+
+ChatGPT is integrated into Microsoft's Edge Browser via [Bing Chat](https://www.bing.com/new?form=MY0291&OCID=MY0291){target=_blank}. 
+
+:material-run-fast: Getting Started with [:simple-googlechrome: Bard Chat](bard.md) 
+
+Google's competitor, [LaMDA](https://blog.google/technology/ai/lamda/), is featured in [Bard](https://bard.google.com/){target=_blank}. 
+
+## General Productivity
+
+:material-run-fast: Go to our lesson on [Daily Productivity with GPTs](daily-productivity.md)
 
 The most likely interaction you will have (or have already had) with [generative AI](https://en.wikipedia.org/wiki/Generative_artificial_intelligence){target=_blank}, [Transformers](https://en.wikipedia.org/wiki/Transformer_(machine_learning_model)){target=_blank}, and [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model){target=_blank} is with [:simple-openai: OpenAI's ChatGPT](https://chat.openai.com/){target=_blank}. 
 
 Predictive text and auto completion are becoming more common in productivity software. Generative AI powered applications are making their way into everyday software like Word Processors, SMS text messaging, and spreadsheets. LLMs are also being released into productivity software like [Microsoft Office 365 w/ CoPilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/){target=_blank} and [Google's Docs and Sheets Workspace](https://workspace.google.com/blog/product-announcements/generative-ai){target=_blank}.
 
-**ChatGPT**
-
-:material-run-fast: Go to our lesson on [:simple-openai: ChatGPT Prompt Enginering](chatgpt_prompts.md)
-
-**AI enabled search engines**
-
-ChatGPT is integrated into Microsoft's Edge Browser via [Bing Chat](https://www.bing.com/new?form=MY0291&OCID=MY0291){target=_blank}. Google's competitor, [LaMDA](https://blog.google/technology/ai/lamda/), is featured in [Bard](https://bard.google.com/){target=_blank}. 
-
-:material-run-fast: Go to our lesson on [:material-microsoft-edge: Edge Bing](bing.md)
-
-:material-run-fast: Go to our lesson on [:simple-googlechrome: Bard](bard.md) 
-
-## Research Applications
+## Research
 
 Research applications of generative AI and LLMs are broad. We obviously won't be able to teach all of them here, but hopefully this is an effective jumping off point:
 
@@ -55,15 +56,8 @@ Research applications of generative AI and LLMs are broad. We obviously won't be
 
 :material-run-fast: Go to our lesson on  [:hugging: Gradio UI](huggingface_gradio.md)
 
-## Educational Applications
 
-Thinking about integrating ChatGPT and OpenAI into your coursework?
-
-There are already a large list of potentail uses for ChatGPT in higher education
-
-Read about [OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt)
-
-??? Info "Glossary"
+!!! Info "Glossary"
 
     [:simple-google: Google's Machine Learning Glossary](https://developers.google.com/machine-learning/glossary){target=_blank}
 
