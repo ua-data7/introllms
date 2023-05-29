@@ -44,6 +44,8 @@ Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and A
 
     [College students using ChatGPT](https://ethicspolicy.unc.edu/news/2023/04/17/the-ethics-of-college-students-using-chatgpt/){target=_blank}
 
+    [Prompt Injection Attacks](https://www.wired.com/story/chatgpt-prompt-injection-attack-security/){target=_blank}
+
     ??? Tip "Ethics of Artificial Intelligence"
 
         * [The Asilomar AI Principles (2017)](https://futureoflife.org/open-letter/ai-principles/){target=_blank}
@@ -51,23 +53,6 @@ Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and A
         * [A Unified Framework of Five Principles for AI in Society](https://doi.org/10.1162%2F99608f92.8cd550d1){target=_blank} 
 
         * [Ethics of Artificial Intelligence (:simple-wikipedia:)](https://en.wikipedia.org/wiki/Ethics_of_artificial_intelligence){target=_blank}
-
-
-??? info "Create a ChatGPT account"
-
-    When you go to [https://chat.openai.com](https://chat.openai.com){target=_blank} you will be redirected to sign in or sign up. 
-
-    If you have a Microsoft account affiliated institutional email address, we suggest you use it.
-
-    !!! tip "ChatGPT Plus"
-
-        Demand for ChatGPT `GPT-4` is high. You may even be denied access for minutes to hours depending on demand.
-
-        Signing up to $20 a month for a "ChatGPT Plus" account will eliminate the wait, and give immediate access to ChatGPT `GPT-4` (which is currently throttled to 25 responses every 3 hours).
-
-        The ChatGPT Plus subscription is separate from the [:simple-openai: OpenAI API](https://platform.openai.com/){target=_blank} in the next lesson.
-
-        Getting access to [ChatGPT Plugins](https://openai.com/blog/chatgpt-plugins){target=_blank} requires registering for a waiting list.
 
 ## How does ChatGPT Work?
 

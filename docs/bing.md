@@ -1,14 +1,6 @@
-# Microsoft Edge and Bing with Chat: Installation and Configuration Guide
+# Microsoft Edge and Bing with Chat
 
-Welcome to the Microsoft Edge and Bing with Chat installation and configuration guide. In this documentation, you will learn how to set up Microsoft Edge and enable Bing with Chat integration.
-
-**Table of Contents**
-
-1. [Installing Microsoft Edge](#installing-microsoft-edge)
-2. [Configuring Bing as the Default Search Engine](#configuring-bing-as-the-default-search-engine)
-3. [Enabling Bing with Chat](#enabling-bing-with-chat)
-
-<a name="installing-microsoft-edge"></a>
+Set up Microsoft Edge and enable Bing with Chat integration.
 
 ## :simple-microsoftedge: Installing Microsoft Edge
 
