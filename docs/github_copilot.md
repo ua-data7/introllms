@@ -1,5 +1,7 @@
 # :octicons-copilot-96: GitHub CoPilot
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 With GitHub's [Education accounts for students and researchers](https://education.github.com/){target=_blank}, you get access to OpenAI powered [CoPilot](https://github.com/features/copilot){target=_blank}.
 
 CoPilot was trained on the GitHub code-base which represents >100 million developers and >372 million code repositires. 

@@ -1,5 +1,7 @@
 # Create a ChatGPT account
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 When you go to [https://chat.openai.com](https://chat.openai.com){target=_blank} you will be redirected to sign in or sign up. 
 
 If you have a Microsoft account affiliated institutional email address, we suggest you use it.

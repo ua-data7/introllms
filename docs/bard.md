@@ -1,5 +1,7 @@
 # Applications with Google Bard
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 Google was caught off guard by the release and success of ChatGPT. It has since released their own competitor [BARD](https://bard.google.com/){target=_blank}, which has much of the same functionality as the new [Microsoft Bing](bing.md). 
  
 While BARD [initially stumbled when it was first announced](https://time.com/6254226/alphabet-google-bard-100-billion-ai-error/){target=_blank}, the simple fact remains: Google handles over 85% of the world's search requests. 

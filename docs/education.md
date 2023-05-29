@@ -1,5 +1,7 @@
 # AI in the classroom
 
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 Thinking about integrating ChatGPT and OpenAI into your coursework?
 
 There are already a large list of potentail uses for ChatGPT in higher education
@@ -12,9 +14,7 @@ Attempting to modify coursework to avoid assessment techniques where ChatGPT exc
 
 Proponents of integrating ChatGPT into educational curricula [(:simple-newyorktimes:)](https://www.nytimes.com/2023/01/12/technology/chatgpt-schools-teachers.html){target=_blank} argue that by adapting and integrating ChatGPT into the curriculum, we can develop a modern workforce empowered by AI assistants. I find myself aligned with this perspective (as does my AI text editor, ChatGPT-4).
 
-??? Tip "Teaching with ChatGPT"
-
-    [Educator Considerations for ChatGPT by :simple-openai: OpenAI](https://platform.openai.com/docs/chatgpt-education){target=_blank}
+!!! Info "Teaching with ChatGPT"
 
     [ChatGPT for Teachers by We Are Teachers](https://www.weareteachers.com/chatgpt-for-teachers/){target=_blank}
 
