@@ -302,8 +302,6 @@ Keep your prompts precise and use clear language. Constrain the topic areas for 
 
 Break down your prompts into simple tasks which do not contain too many complex tasks or ones that require rationalization. 
 
-"Chain prompting"
-
 ??? Danger "Indirect Prompt Injection and Malware"
 
     One of the risks of allowing LLMs and GPTs to access our personal documents and email clients involves the use of malware and malicious attacks.
@@ -314,7 +312,7 @@ Break down your prompts into simple tasks which do not contain too many complex 
 
 ChatGPT is trained on langauges, including software language. Use ChatGPT as your new paired-programming AI assistant. 
 
-:material-run-fast: Go to our lesson on  [:octicons-copilot-48: GitHub CoPilot](github_copilot.md)
+:material-run-fast: Go to our lesson on [:octicons-copilot-48: GitHub CoPilot](github_copilot.md)
 
 For novice programmers, ChatGPT likely fills a long unfilled hole in your knowledge map. It can write code faster than you can, and with the proper prompts, create programs in minutes which may have taken you hours or days. 
 
@@ -466,3 +464,45 @@ ChatGPT is not connected to the web by default and will not produce results from
     Show your results using mathematical equations in LaTeX or MathJax style format
     ```
     Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
+
+## Assessment
+
+??? Question "How long can a prompt be?"
+
+    !!! Answer "Well, it depends"
+
+        A good rule of thumb, depending on the platform, is at most 1,500 words or 3-5 pages of text. 
+        
+        For larger, newer GPTs the length of a prompt may be up to 100 pages.
+
+??? Question "True or False: ChatGPT has access to web browsing by default"
+
+    !!! Failure "False"
+
+        ChatGPT cannot access the internet and is only trained until current events in September of 2021
+
+        Alpha Plugins for ChatGPT have browsing, but are waitlisted.
+
+        Third-party plugins like WebChatGPT can enable browsing, but its results are not optimal.  
+
+        Bing Chat, and Bard both have access to the internet, and can generate responses to current events.
+
+??? Question "Short, concise, prompts are better than long meandering prompts?"
+
+    !!! Answer "it depends"
+
+        Prompts should be specific, but they do not necessarily need to be concise.
+
+        Zero-shot prompts are less likely to return an accurate response than one where you prime the model, establishing a role, a task, and the format of the result you are looking for.
+
+        Chained or linked prompting can also build a more specific response which relates to what you're looking for. 
+
+??? Question "True or False: GPTs produce factually incorrect information"
+
+    !!! Success "True"
+
+        GPTs have the tendency to generate factually incorrect information, along with details that appear to be factually correct.
+
+        If you do not have the ability to discern the truth in a response, relying upon GPTs to generate legal, health, or scientific content is to be avoided at all cost. 
+
+        Using GPTs to produce content which will be used to makle health, research, or government is unethical and in some cases likely illegal.

@@ -36,6 +36,14 @@ The most likely interaction you will have (or have already had) with [generative
 
 Predictive text and auto completion are becoming more common in productivity software. Generative AI powered applications are making their way into everyday software like Word Processors, SMS text messaging, and spreadsheets. LLMs are also being released into productivity software like [Microsoft Office 365 w/ CoPilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/){target=_blank} and [Google's Docs and Sheets Workspace](https://workspace.google.com/blog/product-announcements/generative-ai){target=_blank}.
 
+## Education
+
+:material-run-fast: Go to our lesson on [AI in the Classroom](education.md)
+
+:material-run-fast: Go to our lesson on [Ethics](ethics.md)
+
+
+
 ## Research
 
 Research applications of generative AI and LLMs are broad. We obviously won't be able to teach all of them here, but hopefully this is an effective jumping off point:

@@ -48,8 +48,8 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 | 10:00 | [Session 3: Daily Use & Productivity](daily-productivity.md) | 25 minutes | |
 | 10:25 | [Session 4: Teaching & Ethics](chatgpt_prompts.md) | 25 minutes | |
 | 11:00 | Lunch | 60 minutes | |  
-| 12:00 | [Session 5: Research & Plugins](private_research.md) | 25 minutes |  | 
-| 12:25 | [Session 6: OpenAI API & HuggingFace Apps ](openai_api.md) | 25 minutes | |
+| 12:00 | [Session 5: Research & Plugins](ai_landscape.md) | 25 minutes |  | 
+| 12:25 | [Session 6: OpenAI API & Apps ](openai_api.md) | 25 minutes | |
 | 12:50 | Review & Debrief | 10 minutes | | 
 
 ## Pre-requisites

@@ -22,7 +22,7 @@ nav:
     - Basic Prompt Enginering: chatgpt_prompts.md
     - Using APIs: openai_api.md
   - Education:
-    - Education: education.md
+    - AI in the classroom: education.md
     - Ethics: ethics.md
     - Daily Productivity: daily-productivity.md
   - Research:
