@@ -28,7 +28,7 @@ No food or drinks inside the classrooms, please.
 
 [Greg T. Chism PhD](https://gregtchism.com/){target=_blank}  [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5478-2445){target=_blank}
 
-[Carlos Lizárraga-Celaya PhD](https://github.com/carloslizarragac){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0893-4268){target=_blank}
+[Carlos Lizárraga-Celaya PhD](https://carloslizarragac.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0893-4268){target=_blank}
 
 [Heidi Steiner PhD](https://heidiesteiner.netlify.app/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-1059-1177){target=_blank}
 
