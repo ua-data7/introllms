@@ -30,7 +30,7 @@ Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and A
 
     [:material-run-fast: Go to our Ethics Section](ethics.md)
 
-## How d GPTs Work?
+## How do GPTs Work?
 
 Read the [:simple-openai: ChatGPT Documentation](https://openai.com/blog/chatgpt){target=_blank}
 
