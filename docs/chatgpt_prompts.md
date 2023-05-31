@@ -503,6 +503,6 @@ ChatGPT is not connected to the web by default and will not produce results from
 
         GPTs have the tendency to generate factually incorrect information, along with details that appear to be factually correct.
 
-        If you do not have the ability to discern the truth in a response, relying upon GPTs to generate legal, health, or scientific content is to be avoided at all cost. 
+        If you do not have the ability to discern the truth of a response, relying upon GPTs to generate legal, health, or scientific content is to be avoided. 
 
-        Using GPTs to produce content which will be used to makle health, research, or government is unethical and in some cases likely illegal.
+        Using GPTs to produce content which will be used in decision making for health, research, or government is unethical and may be illegal.
