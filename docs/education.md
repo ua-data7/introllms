@@ -52,8 +52,10 @@ By incorporating AI into graduate and postdoctoral training while maintaining a 
 
 I strongly encourage faculty and research teams to explore how they can incorporate LLMs like GPT-4 into their daily work in the context of developing their own [Research Objects](https://doi.org/10.1038/npre.2010.4626.1){target=_blank}.
 
-## Presentation
+## More Resources on Education
 
-[Using ChatGPT and Bard in Higher Education Teaching Environments](https://tinyurl.com/UAD7ChatGPT-HE). 
+* [Using ChatGPT and Bard in Higher Education Teaching Environments](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Using-ChatGPT-and-Bard-in-Higher-Education) | [Presentation](https://tinyurl.com/UAD7ChatGPT-HE). 
+* [Prompt Engineering Basics for Education](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Prompt-Engineering-Basics)
+* [AI Tools Landscape](https://github.com/ua-data7/LearningResources/wiki/AI-Tools-Landscape)
 
 
