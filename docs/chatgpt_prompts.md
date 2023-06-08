@@ -446,6 +446,20 @@ You can use also ChatGPT to draft email responses or to write letters, although 
      ```
     ```
 
+## :simple-openai: Tuning
+
+You can include Linux command line flags in your prompts,
+
+| Parameter name |	Use | 	Description |
+| :--: | :--: | :-- |
+| Answers |	`-a` or `--answers` |	Specifies the number of output answers (default is 1) |
+| Category |	`-c` or `--category` |	Specifies the category of prompt (coding, creative, factual, fun, general, music, news, science, sports and writing) |
+| Format |	`-f` or `--format` |	Specifies the format of output ("html", "markdown", "plain text", other) |
+| Language |	`-l` or `--language` |	Specifies the required language of output |
+| Size | 	`-s` or `--size`  |	Specifies the maximum number of characters in the output |
+| Temperature |	`-t` or `--temperature`	| Control the creativity of output. The higher the temperature will result in more creative output (maybe less coherent). The temperature can be any value between 0 and 1 (default may be 0.5) |
+
+
 ## :simple-openai:  Academic Research
 
 ChatGPT is not (yet) reliable at producing factual responses and should not be used as a replacement for conventional research techniques such as literature reviews. Our lesson on :material-run-fast: [:hugging: HuggingFace Models](huggingface_models.md) uses a couple of public tools for reviewing PDFs which are closer to academic paper reading and reviewing. 
