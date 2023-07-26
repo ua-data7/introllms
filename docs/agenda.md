@@ -1,4 +1,4 @@
-# 5/31/2023 Workshop Agenda
+# 8/15/2023 Workshop Agenda
 
 ![banner](assets/banner3_ai.png){width=1000}
 
@@ -6,17 +6,11 @@
 
 ### Date 
 
-2023-05-31 09:00 AM - 13:00 PM Pacific Daylight Time
+2023-08-15 09:00 AM - 16:00 PM Pacific Daylight Time
 
 ### Location 
 
-**[Health Sciences Innovation Building](https://goo.gl/maps/REmCthF25znRFa7f8){target=_blank}  Classroom # 531 & 532**
-
-Enter HSIB through the east entrance and take elevators or stairs to the fifth floor.
-
-Outside the classroom and up the east stairs there is a galley kitchen lounge with refrigerator. 
-
-Coffee, tea, water, and refreshements will be provided in the lounge. 
+**[Weber Science Library](https://goo.gl/maps/REmCthF25znRFa7f8){target=_blank}  Classroom # 212**
 
 No food or drinks inside the classrooms, please.
 
@@ -26,11 +20,11 @@ No food or drinks inside the classrooms, please.
 
 [Andrew Bennett PhD](http://arbennett.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7742-3138){target=_blank}
 
-[Greg T. Chism PhD](https://gregtchism.com/){target=_blank}  [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5478-2445){target=_blank}
+[Michele Cosi](https://cosimichele.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-7609-1939){target=_blank}
+
+[Jeffrey K. Gillan](https://gillanscience.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0731-3048){target=_blank}
 
 [Carlos Lizárraga-Celaya PhD](https://carloslizarragac.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0893-4268){target=_blank}
-
-[Heidi Steiner PhD](https://heidiesteiner.netlify.app/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0003-1059-1177){target=_blank}
 
 [Tyson Lee Swetnam PhD](https://tysonswetnam.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0002-6639-7181){target=_blank}
 
