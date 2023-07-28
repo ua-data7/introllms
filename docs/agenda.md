@@ -22,7 +22,7 @@ No food or drinks inside the classrooms, please.
 
 [Michele Cosi](https://cosimichele.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-7609-1939){target=_blank}
 
-[Jeffrey K. Gillan](https://gillanscience.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0731-3048){target=_blank}
+[Jeffrey K. Gillan](https://www.gillanscience.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0731-3048){target=_blank}
 
 [Carlos Lizárraga-Celaya PhD](https://carloslizarragac.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0893-4268){target=_blank}
 
@@ -79,7 +79,7 @@ While participating at an Event, we expect you to:
 
 -   Interact with others and use ChatGPT professionally and ethically by
     complying with our Policies.
--   Constructively critize ideas and processes, not people.
+-   Constructively criticize ideas and processes, not people.
 -   Follow the Golden Rule (treat others as you want to be treated) when
     interacting online or in-person with collaborators, trainers, and
     support staff.

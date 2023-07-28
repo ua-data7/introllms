@@ -73,7 +73,7 @@ Responses are more likely to be useful when multiple specific output types are d
 
     The length of a prompt is [measured in "tokens"](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/unlocking-the-power-of-tokens-optimizing-token-usage-in-gpt-for/ba-p/3826665{target=_blank}). A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is `0.75`. 
 
-    Currently, ChatGPT version `GPT-3.5turbo` uses up to 2,048 tokens per prompt, GPT-4 and Bing Chat can take up to 32,768 tokens.
+    Currently, ChatGPT version `GPT-3.5turbo` uses up to 2,048 tokens per prompt, GPT-4 and Bing Chat can take up to 32,768 tokens. BARD currently has a limit of 20,000 tokens in a prompt. 
     
     This means that a 2,048 token prompt would be equivalent to about 1,536 words (3-6 pages), and a 32,768 token prompt would be 24,576 words (50-100 pages). 
     
@@ -267,9 +267,6 @@ ChatGPT can provide instructional details about how to do specific tasks.
     I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
     ```
 
-### **Code-Interpreter**
-
-ChatGPT's [Code-interpreter](https://openai.com/blog/chatgpt-plugins#code-interpreter){target=_blank} plugins are still in Alpha and Beta release, however they show great promise for helping to anlayze data graphically and statistically.
 
 ### **General Prompt Traits**
 

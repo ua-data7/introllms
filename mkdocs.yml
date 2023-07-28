@@ -21,6 +21,8 @@ nav:
   - Prompt Engineering: 
     - Basic Prompt Enginering: chatgpt_prompts.md
     - Using APIs: openai_api.md
+  - Plugins:
+    - Plugins: plugins.md
   - Education:
     - Teaching & Mentoring: education.md
     - Ethics: ethics.md
