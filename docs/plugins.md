@@ -23,3 +23,6 @@ Check out these youtubers and their recommendations for the plugins.
 ## Code Interpreter
 
 [Code Interpreter](https://openai.com/blog/chatgpt-plugins#code-interpreter{target=_blank}) is a plugin developed in-house at OpenAI. It allows you to upload files within the chat and ask the chatbot to analyze it. Currenty, you can upload spreadsheets, images, text documents, and code. When you ask the bot to do something, it will write python code and then actually execute the code within the chat. 
+
+You can ask it to create a visual word cloud of the document. 
+I asked it to create a histogram of the most common words in the document.
