@@ -36,6 +36,8 @@ For some plugin recommendations check out these youtubers
 
 </br>
 
+___
+
 ## Code Interpreter
 
 [Code Interpreter](https://openai.com/blog/chatgpt-plugins#code-interpreter){target=_blank} is a plugin developed in-house at OpenAI. Through initial experiments, it appears to be a very powerful plugin that can do a variety of tasks. Let's take a look. 
@@ -79,12 +81,19 @@ For data scientists, [Code Interpreter](https://openai.com/blog/chatgpt-plugins#
 </figure>
 <center>'30 Ways' content is from this [Youtube Video](https://www.youtube.com/watch?v=FF_HzfqxS2o)</center>
 
-![Image title](assets/thinking_emoji.jpeg){ width="100" } Should I actually trust chatGPT to analyze data?
+</br>
+</br>
+___
 
-You can ask it to create a visual word cloud of the document. 
-I asked it to create a histogram of the most common words in the document.
+<center>![Image title](assets/thinking_emoji.jpeg){ width="100" }</center>
+<center>Should I actually trust chatGPT to analyze my data?</center>
 
-Custom Instructions for Code Interpreter
+
+
+
+## Custom Instructions
+
+[Custom Instructions](https://openai.com/blog/custom-instructions-for-chatgpt){target=_blank}
 
 ## BARD Capabilities
 
