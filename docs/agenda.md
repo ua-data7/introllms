@@ -10,7 +10,7 @@
 
 ### Location 
 
-**[Weber Science Library](https://goo.gl/maps/REmCthF25znRFa7f8){target=_blank}  Classroom # 212**
+**[Weaver Science Library](https://goo.gl/maps/REmCthF25znRFa7f8){target=_blank}  Classroom # 212**
 
 No food or drinks inside the classrooms, please.
 
