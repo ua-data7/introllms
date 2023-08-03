@@ -14,8 +14,8 @@
 
 No food or drinks inside the classrooms, please.
 
-[<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.461103689603!2d-110.95173458702781!3d32.23085571575714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671aa082e1c71%3A0x1ab9201b69316ff6!2sAlbert%20B.%20Weaver%20Science-Engineering%20Library!5e1!3m2!1sen!2sus!4v1691079404057!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-](https://goo.gl/maps/W36U2fKksCMfYqg38)
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.096855617267!2d-110.95787922395212!3d32.228558473897614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d67101744a05dd%3A0xd83a65c45dc91119!2sEnvironment%20and%20Natural%20Resources%202%20Building!5e0!3m2!1sen!2sus!4v1691096773186!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 #### Instructors(s): 
 
 [Andrew Bennett PhD](http://arbennett.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-7742-3138){target=_blank}
