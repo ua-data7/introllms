@@ -10,7 +10,7 @@
 
 ### Location 
 
-**[ENR 2 Building Room 225](https://goo.gl/maps/W36U2fKksCMfYqg38){target=_blank}  Classroom # 212**
+**[ENR 2 Building](https://goo.gl/maps/W36U2fKksCMfYqg38){target=_blank}  Classroom # 225**
 
 No food or drinks inside the classrooms, please.
 
