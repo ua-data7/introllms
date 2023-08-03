@@ -20,12 +20,11 @@ nav:
     - Bard: bard.md  
   - Prompt Engineering: 
     - Basic Prompt Enginering: chatgpt_prompts.md
-  - Plugins:
-    - Plugins: plugins.md
+    - Daily Productivity: daily-productivity.md
   - Education:
     - Teaching & Mentoring: education.md
-    - Ethics: ethics.md
-    - Daily Productivity: daily-productivity.md
+  - Plugins:
+    - Plugins: plugins.md
   - Research:
     - AI Landscape: ai_landscape.md
     - Coding with CoPilot: github_copilot.md
@@ -34,7 +33,8 @@ nav:
       - Models: huggingface_models.md
       - Datasets: huggingface_datasets.md
       - Gradio: huggingface_gradio.md  
-
+  - Ethics:
+    - Ethics: ethics.md
 # Configuration
 imgwidth: 70px;
 theme:
