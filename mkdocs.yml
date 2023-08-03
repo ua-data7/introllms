@@ -20,7 +20,6 @@ nav:
     - Bard: bard.md  
   - Prompt Engineering: 
     - Basic Prompt Enginering: chatgpt_prompts.md
-    - Using APIs: openai_api.md
   - Plugins:
     - Plugins: plugins.md
   - Education:

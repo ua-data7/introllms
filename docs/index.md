@@ -6,21 +6,7 @@
 
 ## [:material-run-fast: Go to 8/15/2023 Workshop Agenda](agenda.md)
 
-Generative AI is transforming the way we work, learn, and teach at the UArizona. To make the most of this revolutionary technology, you'll need to master the art of creating effective "prompts", the messages or requests that guide the ChatGPT's (or Bard's and Bing's) responses.
- 
-Join us for a free, in-person-only workshop brought to you by the UArizona Data Science Institute and CyVerse. Come to the AM Session only for the basics or stay for the PM Session to apply what you've learned to your own use case or domain!
-AM Session (9am - noon): How to craft better prompts for a wide range of applications (coding, data analysis, research methodology, publication abstracts, etc.)
-PM Session (1-4pm): Hands-on work to explore using ChatGPT, Bard, and Bing for research, coding, and doing your drudge tasks your workflows.
-Due to space limitations, this workshop is capped at 30 participants so register today to gain key skills for using this groundbreaking technology for your research and teaching!
-
-In-person Workshop only (no recording)
-August 15, 2023 (Tue)
-Time: 9am - 4pm PDT/MST
-Workshop location will be provided when we confirm your registration.
-
-
-
-Welcome to our documentation on generative Artificial Intelligence (AI) prompt engineering and application integration in academic research and education.
+Welcome to our documentation on generative Artificial Intelligence (AI) prompt engineering and application integration in academic research and education. Generative AI is transforming the way we work, learn, and teach at the UArizona. To make the most of this revolutionary technology, you'll need to master the art of creating effective "prompts", the messages or requests that guide the ChatGPT's (or Bard's and Bing's) responses.
 
 !!! Success "Learning Objectives"
 

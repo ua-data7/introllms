@@ -149,6 +149,19 @@ Examples of roles you might ask for are: a domain science expert, an IT or DevOp
 
     Example can use `GPT-3.5-Turbo` or `GPT-4`
 
+??? Abstract "Talk to Dead Scientists"
+
+    Try to ask a question with and without Internet access enabled:
+
+    ```markdown
+    I want you to respond as though you are the mathematician Benoit Mandelbrot
+
+    Explain the relationship of lacunarity and fractal dimension for a self-affine series
+
+    Show your results using mathematical equations in LaTeX or MathJax style format
+    ```
+    Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
+
 #### **Tasks**
 
 Prompts which return informative responses to questions like "What is ..." or "How does ..."
@@ -233,23 +246,7 @@ Responses to prompts may not return the exact details or information that you ar
 | Step 2: Summarizing | "Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words." |
 | Step 3: Try again with enabled [WebChatGPT](https://www.webchatgpt.app/){target=_blank} or [Browsing](https://openai.com/blog/chatgpt-plugins#browsing){target=_blank} | "Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each." |
 
-**Question and Answer**
 
-Prompts which return informative responses to questions like "What is ..." or "How does ..."
-
-Because of ChatGPT's proclivity at making up information, using it without a way of validating the authenticity of its responses makes it less trustworthy than regular search engines. 
-
-Bing and Bard fill an important space in these types of prompts - they return websites which match the query criterion and allow you to research your own answers.
-
-There are extension tools for ChatGPT which allows you to prompt with references.
-
-!!! Tip "Grant ChatGPT access to the Internet"
-
-    By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. 
-
-    There are extension tools, like [WebChatGPT](https://www.webchatgpt.app/) which you can install in your browser (Firefox or Chrome), that will extend ChatGPT's reach to the internet.
-
-    What you're actually doing with this extension is automating the creation of a much larger promt message, which includes hyperlinks to resources on the internet.
 
 **Instructional**
 
@@ -457,24 +454,8 @@ You can include Linux command line flags in your prompts,
 | Temperature |	`-t` or `--temperature`	| Control the creativity of output. The higher the temperature will result in more creative output (maybe less coherent). The temperature can be any value between 0 and 1 (default may be 0.5) |
 
 
-## :simple-openai:  Academic Research
 
-ChatGPT is not (yet) reliable at producing factual responses and should not be used as a replacement for conventional research techniques such as literature reviews. Our lesson on :material-run-fast: [:hugging: HuggingFace Models](huggingface_models.md) uses a couple of public tools for reviewing PDFs which are closer to academic paper reading and reviewing. 
 
-ChatGPT is not connected to the web by default and will not produce results from dates after its training period (September 2021 for `GPT-4`). The Alpha release [Browsing](https://openai.com/blog/chatgpt-plugins#browsing){target=_blank} and unofficial plugins like [WebChatGPT](https://www.webchatgpt.app/){target=_blank} open up the internet but are still limited in their ability to return focused results.
-
-??? Abstract "Talk to Dead Scientists"
-
-    Try to ask a question with and without Internet access enabled:
-
-    ```markdown
-    I want you to respond as though you are the mathematician Benoit Mandelbrot
-
-    Explain the relationship of lacunarity and fractal dimension for a self-affine series
-
-    Show your results using mathematical equations in LaTeX or MathJax style format
-    ```
-    Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
 
 ## Assessment
 

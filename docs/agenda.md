@@ -10,11 +10,11 @@
 
 ### Location 
 
-**[Weaver Science Library](https://goo.gl/maps/REmCthF25znRFa7f8){target=_blank}  Classroom # 212**
+**[Weaver Science Library](https://goo.gl/maps/rYgbUGvWb7kuw8keA){target=_blank}  Classroom # 212**
 
 No food or drinks inside the classrooms, please.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3374.7116878831707!2d-110.94982652402594!3d32.238928673893106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671a7b5176c53%3A0x67880bc15138eb29!2sHealth%20Sciences%20Innovation%20Building%20(HSIB)!5e0!3m2!1sen!2sus!4v1685220356093!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.461103689603!2d-110.95173458702781!3d32.23085571575714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d671aa082e1c71%3A0x1ab9201b69316ff6!2sAlbert%20B.%20Weaver%20Science-Engineering%20Library!5e1!3m2!1sen!2sus!4v1691079404057!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 #### Instructors(s): 
 
