@@ -22,7 +22,7 @@ No food or drinks inside the classrooms, please.
 
 [Michele Cosi](https://cosimichele.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-7609-1939){target=_blank}
 
-[Jeffrey K. Gillan](https://www.gillanscience.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0731-3048){target=_blank}
+[Jeffrey K. Gillan PhD](https://www.gillanscience.com/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0731-3048){target=_blank}
 
 [Carlos Lizárraga-Celaya PhD](https://carloslizarragac.github.io/){target=_blank} [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-0893-4268){target=_blank}
 
@@ -34,18 +34,19 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 
 ## Agenda
 
-| :fontawesome-solid-hourglass-half: | Lessons | Estimated Time to Complete | Link |
-|------------------------------------|---------|----------------------------|------|
-| 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | 5 minutes | [HackMD Notes](https://tinyurl.com/ua-chatgpt101-notes){target=_blank} |
-| 09:05 | [Session 1: Introduction to Large Language Models](chatgpt_prompts.md#how-does-chatgpt-work) | 15 minutes | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| 09:20| [Session 2: Effective Prompt Engineering](chatgpt_prompts.md#simple-openai-prompt-writing) | 30 minutes | [:simple-openai: ChatGPT](https://chat.openai.com){target=_blank} |
-| 09:50 | Break | 10 minutes | |
-| 10:00 | [Session 3: Daily Use & Productivity](daily-productivity.md) | 25 minutes | |
-| 10:25 | [Session 4: Teaching & Ethics](education.md) | 25 minutes | |
-| 11:00 | Lunch | 60 minutes | |  
-| 12:00 | [Session 5: Research & Plugins](ai_landscape.md) | 25 minutes |  | 
-| 12:25 | [Session 6: OpenAI API & Apps ](openai_api.md) | 25 minutes | |
-| 12:50 | Review & Debrief | 10 minutes | | 
+| :fontawesome-solid-hourglass-half: | Lessons | Instructor | Link |
+|------------------------------------|---------|------------|------|
+| 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
+| 09:10 | [Session 1: Introduction to Large Language Models](chatgpt_prompts.md#how-does-chatgpt-work) | 
+| 09:20| [Session 2: Effective Prompt Engineering](chatgpt_prompts.md#simple-openai-prompt-writing) |  
+| 09:50 | Break |  |
+| 10:00 | [Session 3: Daily Use & Productivity](daily-productivity.md) |  |
+| 10:25 | [Session 4: Education](education.md) | Carlos |
+| 11:00 | Lunch |  |  
+| 12:00 | [Session 5: Plugins & Code Interpreter](plugins.md) | Jeff | 
+| 12:25 | Session 6: CoPilot & VSCode | Andrew |
+| 12:40 | Session 7: Hugging Face | Tyson
+| 12:50 | Review & Debrief |  | 
 
 ## Pre-requisites
 
