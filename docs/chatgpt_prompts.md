@@ -4,31 +4,7 @@
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-**When can you use a GPT for research and education?**
 
-``` mermaid
-graph TB
-  A((Start)) --> B("Does it matter if the outputs are true?  &nbsp");
-  B -->| No | F("Safe to use GPT");
-  B -->| Yes | C("Do you have the ability to verify output truth and accuracy? &nbsp &nbsp");
-  C -->| Yes | D("Understand legal and moral responsibility of your errors?  &nbsp &nbsp");
-  C -->| No | E("Unsafe to use GPT");
-  D -->| Yes | F("Safe to use GPT");
-  D -->| No | E("Unsafe to use GPT");
-
-  style A fill:#2ECC71,stroke:#fff,stroke-width:2px,color:#fff
-  style B fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
-  style C fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
-  style D fill:#F7DC6F,stroke:#fff,stroke-width:2px,color:#000
-  style E fill:#C0392B,stroke:#fff,stroke-width:2px,color:#fff
-  style F fill:#2ECC71,stroke:#fff,stroke-width:2px,color:#fff
-```
-
-Figure credit, based on: :fontawesome-brands-creative-commons-by: [ChatGPT and Artificial Intelligence in Education, UNESCO 2023 :fontawesome-regular-file-pdf:](https://www.iesalc.unesco.org/wp-content/uploads/2023/04/ChatGPT-and-Artificial-Intelligence-in-higher-education-Quick-Start-guide_EN_FINAL.pdf){target=_blank}
-
-!!! Question "Is it ethical :material-scale-balance: to use GPTs?"
-
-    [:material-run-fast: Go to our Ethics Section](ethics.md)
 
 ## How do GPTs Work?
 

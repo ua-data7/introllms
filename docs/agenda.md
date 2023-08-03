@@ -37,16 +37,17 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 | :fontawesome-solid-hourglass-half: | Lessons | Instructor | Link |
 |------------------------------------|---------|------------|------|
 | 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
-| 09:10 | [Session 1: Introduction to Large Language Models](chatgpt_prompts.md#how-does-chatgpt-work) | 
-| 09:20| [Session 2: Effective Prompt Engineering](chatgpt_prompts.md#simple-openai-prompt-writing) |  
-| 09:50 | Break |  |
-| 10:00 | [Session 3: Daily Use & Productivity](daily-productivity.md) |  |
-| 10:25 | [Session 4: Education](education.md) | Carlos |
+| 09:10 | [Session 1: Introduction to Large Language Models](chatgpt_prompts.md#how-do-gpts-work) | Carlos | 
+| 09:30| [Session 2: Prompt Engineering & Open Mic](chatgpt_prompts.md#simple-openai-prompt-writing) |  Michele 
+| 10:00 | Break |  |
+| 10:10 | [Session 3: Prompt Engineering Continued & Open Mic](daily-productivity.md) | Jeff & Tyson  |
 | 11:00 | Lunch |  |  
-| 12:00 | [Session 5: Plugins & Code Interpreter](plugins.md) | Jeff | 
-| 12:25 | Session 6: CoPilot & VSCode | Andrew |
-| 12:40 | Session 7: Hugging Face | Tyson
-| 12:50 | Review & Debrief |  | 
+| 12:00 | [Session 4: Plugins & Code Interpreter](plugins.md) | Jeff | 
+| 12:30 | Session 5: CoPilot & VSCode | Andrew |
+| 13:00 | Break |  
+| 13:10 | Session 6: Hugging Face & Gradio | Tyson
+| 13:50 | Open Mic & Discussion|  |
+| 14:00 - ? | Hackathon |  
 
 ## Pre-requisites
 
