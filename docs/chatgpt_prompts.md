@@ -24,6 +24,8 @@ GPTs use a syntax called [MarkDown :octicons-markdown-16:](https://www.markdowng
 
 This website, for example, is written using MarkDown syntax ([MkDocs-Material](https://squidfunk.github.io/mkdocs-material/){target=_blank}) and converted to HTML using Python. 
 
+___
+
 ## :simple-openai: Prompt Writing
 
 GPT Chat asks for a message to begin its conversation. These messages are called "Prompts". 
@@ -56,7 +58,7 @@ Responses are more likely to be useful when multiple specific output types are d
     However, this is only an approximation and may vary depending on the specific text and model. 
 
     What this also means is that current GPT are not capable of reading many PDFs at one time, for example, to do a literature review, or to write a sequel to a novel or book series. 
-
+___
 ### **Prompt Structure**
 
 | Role | Task | Format |
@@ -138,6 +140,13 @@ Examples of roles you might ask for are: a domain science expert, an IT or DevOp
     ```
     Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. 
 
+
+#### Custom Instructions
+
+Rolled out to subscribing users in July 2023, [Custom Instructions](https://openai.com/blog/custom-instructions-for-chatgpt){target=_blank} is a more explicit way to set roles and specify how you want ChatGPT to respond.
+
+![](assets/custom_instructions.png){width=450}
+
 #### **Tasks**
 
 Prompts which return informative responses to questions like "What is ..." or "How does ..."
@@ -207,7 +216,7 @@ ChatGPT can provide instructional details about how to do specific tasks.
 
     I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
     ```
-
+___
 ### **Linked Prompts**
 
 Follow-up your prompts sequentially.
@@ -239,7 +248,7 @@ ChatGPT can provide instructional details about how to do specific tasks.
 
     I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
     ```
-
+___
 
 ### **General Prompt Traits**
 

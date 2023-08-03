@@ -90,11 +90,6 @@ ___
 
 
 
-
-## Custom Instructions
-
-[Custom Instructions](https://openai.com/blog/custom-instructions-for-chatgpt){target=_blank}
-
 ## BARD Capabilities
 
 Since BARD is connected to the internet, you can give it a link to a research paper and it will read it and answer question based on it. 
