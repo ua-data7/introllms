@@ -18,7 +18,6 @@ nav:
     - ChatGPT: chatgpt.md
     - Bing: bing.md  
     - Bard: bard.md  
-    - Poe: poe.md
   - Prompt Engineering: 
     - Basic Prompt Enginering: chatgpt_prompts.md
     - Daily Productivity: daily-productivity.md
