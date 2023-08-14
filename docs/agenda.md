@@ -38,9 +38,9 @@ This website follows the [FAIR](https://www.go-fair.org/fair-principles/){target
 |------------------------------------|---------|------------|------|
 | 09:00 | Introductions & [Code of Conduct](#code-of-conduct) | Tyson | [presentation](https://docs.google.com/presentation/d/1PzPafN5Yznf8jdgpquPAaN0TmYC9WJwvPxM_I2LPwFo/edit?usp=sharing){target=_blank} |
 | 09:10 | [Session 1: Introduction to Large Language Models](https://github.com/clizarraga-UAD7/DeepLearning/wiki/Introduction-to-LLMs) | Carlos | 
-| 09:30| [Session 2: Prompt Engineering & Open Mic](chatgpt_prompts.md#simple-openai-prompt-writing) |  Michele 
+| 09:30| [Session 2: Prompt Engineering & Open Mic](chatgpt_prompts.md#simple-openai-prompt-writing) |  Jeff 
 | 10:00 | Break |  |
-| 10:10 | [Session 3: Prompt Engineering Continued & Open Mic](daily-productivity.md) | Jeff & Tyson  |
+| 10:10 | [Session 3: Prompt Engineering Continued & Open Mic](daily-productivity.md) | Michele & Tyson  |
 | 11:00 | Lunch |  |  
 | 12:00 | [Session 4: Plugins & Code Interpreter](plugins.md) | Jeff | 
 | 12:30 | Session 5: CoPilot & VSCode | Andrew |
