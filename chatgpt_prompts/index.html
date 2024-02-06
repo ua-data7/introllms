@@ -1,0 +1,1703 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for Prompt Engineering 101 Workshop">
+      
+      
+        <meta name="author" content="University of Arizona Data Sciences Institute">
+      
+      
+        <link rel="canonical" href="https://ua-data7.github.io/introllms/chatgpt_prompts/">
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Basic Prompt Enginering - GPT 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#prompt-engineering" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="GPT 101" class="md-header__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/uarizona.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GPT 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Basic Prompt Enginering
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: white)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/ua-data7/introllms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    introllms
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../agenda/" class="md-tabs__link">
+      Workshop Agenda
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chatgpt/" class="md-tabs__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Prompt Engineering
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../education/" class="md-tabs__link">
+        Education
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../plugins/" class="md-tabs__link">
+        Plugins
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ai_landscape/" class="md-tabs__link">
+        Research
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../ethics/" class="md-tabs__link">
+        Ethics
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="GPT 101" class="md-nav__button md-logo" aria-label="GPT 101" data-md-component="logo">
+      
+  <img src="../assets/uarizona.png" alt="logo">
+
+    </a>
+    GPT 101
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ua-data7/introllms" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    introllms
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agenda/" class="md-nav__link">
+        Workshop Agenda
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chatgpt/" class="md-nav__link">
+        ChatGPT
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bing/" class="md-nav__link">
+        Bing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bard/" class="md-nav__link">
+        Bard
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Prompt Engineering
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Prompt Engineering" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Prompt Engineering
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Basic Prompt Enginering
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Basic Prompt Enginering
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-gpts-work" class="md-nav__link">
+    How do GPTs Work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prompt-writing" class="md-nav__link">
+     Prompt Writing
+  </a>
+  
+    <nav class="md-nav" aria-label=" Prompt Writing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priming" class="md-nav__link">
+    Priming
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-structure" class="md-nav__link">
+    Prompt Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Prompt Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#role" class="md-nav__link">
+    Role
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-instructions" class="md-nav__link">
+    Custom Instructions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tasks" class="md-nav__link">
+    Tasks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    Format
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linked-prompts" class="md-nav__link">
+    Linked Prompts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-prompt-traits" class="md-nav__link">
+    General Prompt Traits
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-development" class="md-nav__link">
+     Software Development
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#word-processing" class="md-nav__link">
+     Word Processing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuning" class="md-nav__link">
+     Tuning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessment" class="md-nav__link">
+    Assessment
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../daily-productivity/" class="md-nav__link">
+        Daily Productivity
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Education" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Education
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../education/" class="md-nav__link">
+        Teaching & Mentoring
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Plugins
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Plugins" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Plugins
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins/" class="md-nav__link">
+        Plugins
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Research
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Research" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Research
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ai_landscape/" class="md-nav__link">
+        AI Landscape
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github_copilot/" class="md-nav__link">
+        Coding with CoPilot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../openai_extensions/" class="md-nav__link">
+        OpenAI extensions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_4" type="checkbox" id="__nav_7_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_4">
+          HuggingFace
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="HuggingFace" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          HuggingFace
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface_models/" class="md-nav__link">
+        Models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface_datasets/" class="md-nav__link">
+        Datasets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../huggingface_gradio/" class="md-nav__link">
+        Gradio
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8">
+          Ethics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Ethics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Ethics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ethics/" class="md-nav__link">
+        Ethics
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/ua-data7/introllms/edit/main/docs/chatgpt_prompts.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="prompt-engineering">Prompt Engineering<a class="headerlink" href="#prompt-engineering" title="Permanent link">&para;</a></h1>
+<p><img alt="banner" src="../assets/dailyprod-banner.png" width="1000" /></p>
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
+<h2 id="how-do-gpts-work">How do GPTs Work?<a class="headerlink" href="#how-do-gpts-work" title="Permanent link">&para;</a></h2>
+<p>Read the <a href="https://openai.com/blog/chatgpt" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.872zm16.597 3.855-5.833-3.387L15.119 7.2a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08-4.778 2.758a.795.795 0 0 0-.393.681zm1.097-2.365 2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5Z"/></svg></span> ChatGPT Documentation</a></p>
+<p>Read the <a href="https://doi.org/10.48550/arXiv.2303.08774" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M320 464c8.8 0 16-7.2 16-16v-32h48v32c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64v-32h48v32c0 8.8 7.16 16 16 16h256zm-64-304c-17.7 0-32-14.3-32-32V48H64c-8.84 0-16 7.16-16 16v128H0V64C0 28.65 28.65 0 64 0h165.5c17 0 33.2 6.743 45.2 18.75l90.6 90.55c12 12 18.7 28.2 18.7 45.2V192h-48v-32h-80zM88 224c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.16 16-16 16s-16-7.2-16-16V240c0-8.8 7.16-16 16-16h24zm24 56c0-13.3-10.7-24-24-24h-8v48h8c13.3 0 24-10.7 24-24zm48-40c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-24c-8.8 0-16-7.2-16-16V240zm32 112h8c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-8v96zm144-128c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V240c0-8.8 7.2-16 16-16h48z"/></svg></span> ChatGPT Technical Report</a></p>
+<p>Read the <a href="https://ai.google/static/documents/google-about-bard.pdf" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M320 464c8.8 0 16-7.2 16-16v-32h48v32c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64v-32h48v32c0 8.8 7.16 16 16 16h256zm-64-304c-17.7 0-32-14.3-32-32V48H64c-8.84 0-16 7.16-16 16v128H0V64C0 28.65 28.65 0 64 0h165.5c17 0 33.2 6.743 45.2 18.75l90.6 90.55c12 12 18.7 28.2 18.7 45.2V192h-48v-32h-80zM88 224c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.16 16-16 16s-16-7.2-16-16V240c0-8.8 7.16-16 16-16h24zm24 56c0-13.3-10.7-24-24-24h-8v48h8c13.3 0 24-10.7 24-24zm48-40c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-24c-8.8 0-16-7.2-16-16V240zm32 112h8c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-8v96zm144-128c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V240c0-8.8 7.2-16 16-16h48z"/></svg></span> Bard Documentation</a></p>
+<p>ChatGPT's <code>GPT-3.5</code> and <code>GPT-v4</code> models use natural language prompts to elicit contextual responses. </p>
+<p>GPTs can respond to either langauge (prose) or computer code. </p>
+<p>Other LLM models (like <a href="https://openai.com/product/dall-e-2" target="_blank">DALL-E</a> or <a href="https://www.midjourney.com/" target="_blank">MidJourney</a>) produce images based on prompts.</p>
+<p>GPTs use a syntax called <a href="https://www.markdownguide.org/" target="_blank">MarkDown <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"/></svg></span></a>. Markdown is plain text that uses special characters for formatting. </p>
+<p>This website, for example, is written using MarkDown syntax (<a href="https://squidfunk.github.io/mkdocs-material/" target="_blank">MkDocs-Material</a>) and converted to HTML using Python. </p>
+<hr />
+<h2 id="prompt-writing"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.872zm16.597 3.855-5.833-3.387L15.119 7.2a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08-4.778 2.758a.795.795 0 0 0-.393.681zm1.097-2.365 2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5Z"/></svg></span> Prompt Writing<a class="headerlink" href="#prompt-writing" title="Permanent link">&para;</a></h2>
+<p>GPT Chat asks for a message to begin its conversation. These messages are called "Prompts". </p>
+<p>Begin a conversation with a specific type of prompt. This will help narrow the potential range of responses and improve results to subsequent prompts. </p>
+<h3 id="priming"><strong>Priming</strong><a class="headerlink" href="#priming" title="Permanent link">&para;</a></h3>
+<p>GPTs do better when provided with "prompt primers".</p>
+<p>Zero-shot unconditioned prompts are likely to return the least specific responses. </p>
+<p>Responses are more likely to be useful when multiple specific output types are defined.</p>
+<table>
+<thead>
+<tr>
+<th>Types of Priming</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zero (Shot)</td>
+<td>"Write five examples of assessments for watershed health."</td>
+</tr>
+<tr>
+<td>Single</td>
+<td>"Write five examples of assessments for watershed health. Here is one example: Geomorphology"</td>
+</tr>
+<tr>
+<td>Multiple</td>
+<td>"Write five examples of assessments for watershed health related to geomorphology, water quality, and species diversity."</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition tip">
+<p class="admonition-title">How long can or should a prompt be?</p>
+<p>The length of a prompt is <a href="https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/unlocking-the-power-of-tokens-optimizing-token-usage-in-gpt-for/ba-p/3826665{target=_blank}">measured in "tokens"</a>. A token can represent an individual character, a word, or a subword depending on the specific tokenization approach. A rough estimate for the average number of words in English language per token is <code>0.75</code>. </p>
+<p>Currently, ChatGPT version <code>GPT-3.5turbo</code> uses up to 2,048 tokens per prompt, GPT-4 and Bing Chat can take up to 32,768 tokens. BARD currently has a limit of 20,000 tokens in a prompt. </p>
+<p>This means that a 2,048 token prompt would be equivalent to about 1,536 words (3-6 pages), and a 32,768 token prompt would be 24,576 words (50-100 pages). </p>
+<p>However, this is only an approximation and may vary depending on the specific text and model. </p>
+<p>What this also means is that current GPT are not capable of reading many PDFs at one time, for example, to do a literature review, or to write a sequel to a novel or book series. </p>
+</div>
+<hr />
+<h3 id="prompt-structure"><strong>Prompt Structure</strong><a class="headerlink" href="#prompt-structure" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Task</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Act as <a href="#role-based">[ROLE]</a></td>
+<td>Create a <a href="#tasks">[TASK]</a></td>
+<td>... show as <a href="#format">[FORMAT]</a></td>
+</tr>
+</tbody>
+</table>
+<p>Your prompt should specify the role in which ChatGPT responds, what its task is, and the format of how its outputs should be returned. </p>
+<p>A second step to the initial prompt is to <a href="#linked-prompts">link or chain</a> your subsequent prompts. </p>
+<p>This lesson only covers ChatGPT, but the same prompt techniques can be used in other LLMs.</p>
+<details class="tip">
+<summary>ChatGPT <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m24 11.438-6.154-5.645-.865.944 5.128 4.7H1.895l5.128-4.705-.865-.943-6.154 5.649H0v3.72c0 1.683 1.62 3.053 3.61 3.053h3.795c1.99 0 3.61-1.37 3.61-3.051v-2.446h1.97v2.446c0 1.68 1.62 3.051 3.61 3.051h3.794c1.99 0 3.61-1.37 3.61-3.051v-3.721z"/></svg></span> Awesome Lists</summary>
+<p>There is an ever changing meta-list of <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m24 11.438-6.154-5.645-.865.944 5.128 4.7H1.895l5.128-4.705-.865-.943-6.154 5.649H0v3.72c0 1.683 1.62 3.053 3.61 3.053h3.795c1.99 0 3.61-1.37 3.61-3.051v-2.446h1.97v2.446c0 1.68 1.62 3.051 3.61 3.051h3.794c1.99 0 3.61-1.37 3.61-3.051v-3.721z"/></svg></span> Awesome lists curated around ChatGPT plugins and extensions.</p>
+<p><a href="https://github.com/search?q=awesome-chatgpt+&amp;type=repositories&amp;s=stars&amp;o=desc" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> search: <code>chatgpt+awesome</code></a></p>
+<p>Check out lists around:</p>
+<p><a href="https://github.com/f/awesome-chatgpt-prompts" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m24 11.438-6.154-5.645-.865.944 5.128 4.7H1.895l5.128-4.705-.865-.943-6.154 5.649H0v3.72c0 1.683 1.62 3.053 3.61 3.053h3.795c1.99 0 3.61-1.37 3.61-3.051v-2.446h1.97v2.446c0 1.68 1.62 3.051 3.61 3.051h3.794c1.99 0 3.61-1.37 3.61-3.051v-3.721z"/></svg></span> ChatGPT Prompts</a></p>
+<p><a href="https://github.com/travistangvh/ChatGPT-Data-Science-Prompts" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m24 11.438-6.154-5.645-.865.944 5.128 4.7H1.895l5.128-4.705-.865-.943-6.154 5.649H0v3.72c0 1.683 1.62 3.053 3.61 3.053h3.795c1.99 0 3.61-1.37 3.61-3.051v-2.446h1.97v2.446c0 1.68 1.62 3.051 3.61 3.051h3.794c1.99 0 3.61-1.37 3.61-3.051v-3.721z"/></svg></span> ChatGPT Data Science Prompts</a></p>
+<p><a href="https://github.com/humanloop/awesome-chatgpt" target="_blank"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m24 11.438-6.154-5.645-.865.944 5.128 4.7H1.895l5.128-4.705-.865-.943-6.154 5.649H0v3.72c0 1.683 1.62 3.053 3.61 3.053h3.795c1.99 0 3.61-1.37 3.61-3.051v-2.446h1.97v2.446c0 1.68 1.62 3.051 3.61 3.051h3.794c1.99 0 3.61-1.37 3.61-3.051v-3.721z"/></svg></span> API plugins, extensions, &amp; applications</a></p>
+</details>
+<h4 id="role"><strong>Role</strong><a class="headerlink" href="#role" title="Permanent link">&para;</a></h4>
+<p>Set the role for ChatGPT to play during your session. </p>
+<p>"I want you to act as ..." will establish what type of conversation you are planning to have. </p>
+<table>
+<thead>
+<tr>
+<th>Types of Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project Manager</td>
+</tr>
+<tr>
+<td>Copywriter / Editor</td>
+</tr>
+<tr>
+<td>Paper Reviewer</td>
+</tr>
+<tr>
+<td>Teacher / Mentor / Advisor</td>
+</tr>
+<tr>
+<td>Student / Learner / Participant</td>
+</tr>
+<tr>
+<td>Software Engineer</td>
+</tr>
+<tr>
+<td>DevOps Engineer</td>
+</tr>
+<tr>
+<td>Linux Terminal</td>
+</tr>
+<tr>
+<td>Python Interpreter</td>
+</tr>
+<tr>
+<td>Web Browser</td>
+</tr>
+</tbody>
+</table>
+<p>Examples of roles you might ask for are: a domain science expert, an IT or DevOps engineer, software programmer, journal editor, paper reviewer, mentor, teacher, or student. You can even instruct ChatGPT to respond as though it were a Linux <a href="https://www.engraved.blog/building-a-virtual-machine-inside/" target="_blank">terminal</a>, a web browser, a search engine, or language interpreter.</p>
+<details class="abstract">
+<summary>Data Scientist</summary>
+<p>Let's try an example prompt with role-playing to help write code in the R programming language.</p>
+<div class="highlight"><pre><span></span><code>I want you to act as a data scientist with complete knowledge of the R language, 
+the TidyVerse, and RStudio. 
+
+Write the code required to create a new R project environment,
+Download and load the Palmer Penguins dataset, and plot regressions of body mass, 
+bill length, and width for the species of Penguins in the dataset. 
+
+Your response output should be in R and RMarkDown format 
+with text and code delineated with ``` blocks.
+
+At the beginning of new file make sure to install any 
+RStudio system dependencies and R libraries that Palmer Penguins requires.
+</code></pre></div>
+<p>Example can use <code>GPT-3.5-Turbo</code> or <code>GPT-4</code></p>
+</details>
+<details class="abstract">
+<summary>Talk to Dead Scientists</summary>
+<p>Try to ask a question with and without Internet access enabled:</p>
+<p><div class="highlight"><pre><span></span><code>I want you to respond as though you are the mathematician Benoit Mandelbrot
+
+Explain the relationship of lacunarity and fractal dimension for a self-affine series
+
+Show your results using mathematical equations in LaTeX or MathJax style format
+</code></pre></div>
+Again, there is no guarantee that the results ChatGPT provides are factual, but it does greatly improve the odds that they are relevant to the prompt. Most importantly, these extensions provide citations for their results, allowing you to research the results yourself. </p>
+</details>
+<h4 id="custom-instructions">Custom Instructions<a class="headerlink" href="#custom-instructions" title="Permanent link">&para;</a></h4>
+<p>Rolled out to subscribing users in July 2023, <a href="https://openai.com/blog/custom-instructions-for-chatgpt" target="_blank">Custom Instructions</a> is a more explicit way to set roles and specify how you want ChatGPT to respond.</p>
+<p><img alt="" src="../assets/custom_instructions.png" width="450" /></p>
+<h4 id="tasks"><strong>Tasks</strong><a class="headerlink" href="#tasks" title="Permanent link">&para;</a></h4>
+<p>Prompts which return informative responses to questions like "What is ..." or "How does ..."</p>
+<p>Because of ChatGPT's proclivity at making up information, using it without a way of validating the authenticity of its responses makes it less trustworthy than regular search engines. </p>
+<table>
+<thead>
+<tr>
+<th>Types of Task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scientific Article</td>
+</tr>
+<tr>
+<td>Essay</td>
+</tr>
+<tr>
+<td>Blog Post</td>
+</tr>
+<tr>
+<td>Outline</td>
+</tr>
+<tr>
+<td>Email</td>
+</tr>
+<tr>
+<td>Cover Letter</td>
+</tr>
+<tr>
+<td>Recipe</td>
+</tr>
+<tr>
+<td>Tutorial</td>
+</tr>
+<tr>
+<td>Lesson Plan</td>
+</tr>
+<tr>
+<td>Jupyter Notebook</td>
+</tr>
+<tr>
+<td>Configuration</td>
+</tr>
+<tr>
+<td>Code</td>
+</tr>
+<tr>
+<td>Software Script</td>
+</tr>
+</tbody>
+</table>
+<p>Bing and Bard fill an important space in these types of prompts - they return websites which match the query criterion and allow you to research your own answers.</p>
+<p>There are extension tools for ChatGPT which allows you to prompt with references.</p>
+<div class="admonition tip">
+<p class="admonition-title">Access the Internet</p>
+<p>By default, ChatGPT does not have access to the Internet, and is limited to the time period before September 2021 (as of mid-2023) for its training data time frame. </p>
+<p>There are third-party extensions, like <a href="https://www.webchatgpt.app/">WebChatGPT</a> which you can install in your browser (Firefox or Chrome), that will extend OpenAI ChatGPT's reach to the internet.</p>
+<p>We presently recommend using <a href="../bing/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 3v16l3.72 2L18 15.82v-4.09L9.77 8.95l1.61 3.89L13.94 14 8.7 16.92V4.27L5 3"/></svg></span> Bing Chat</a> with Edge Browser instead of ChatGPT 3.5 for prompting which works with the internet.</p>
+<p><a href="../bard/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></span> Bard</a> also has access to the web and limited integration with Google Workspace.</p>
+</div>
+<h4 id="format"><strong>Format</strong><a class="headerlink" href="#format" title="Permanent link">&para;</a></h4>
+<p>By default ChatGPT outputs MarkDown syntax text. It can also output software code, and soon images, video, music and sounds.</p>
+<table>
+<thead>
+<tr>
+<th>Formats to output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MarkDown Text (\&amp; emojis)</td>
+</tr>
+<tr>
+<td>List</td>
+</tr>
+<tr>
+<td>Table</td>
+</tr>
+<tr>
+<td>HTML</td>
+</tr>
+<tr>
+<td>CSS</td>
+</tr>
+<tr>
+<td>Regular Expression</td>
+</tr>
+<tr>
+<td>CSV / TXT</td>
+</tr>
+<tr>
+<td>JSON</td>
+</tr>
+<tr>
+<td>Rich Text</td>
+</tr>
+<tr>
+<td>Gantt Chart</td>
+</tr>
+<tr>
+<td>Word Cloud</td>
+</tr>
+<tr>
+<td>Graphs</td>
+</tr>
+<tr>
+<td>Spreadsheets</td>
+</tr>
+</tbody>
+</table>
+<p>You can also ask ChatGPT to explain complex topics or to act as a cook-book step-by-step guide. </p>
+<p>ChatGPT can provide instructional details about how to do specific tasks. </p>
+<details class="abstract">
+<summary>Documentation Writer</summary>
+<div class="highlight"><pre><span></span><code>I want you to act as a DIY expert. You will help me develop the skills necessary 
+to complete simple lab documentation, create tutorials and guides for beginners and experts, 
+and explain complex concepts in layman&#39;s terms using visual techniques, and develop helpful resources.
+
+I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
+</code></pre></div>
+</details>
+<hr />
+<h3 id="linked-prompts"><strong>Linked Prompts</strong><a class="headerlink" href="#linked-prompts" title="Permanent link">&para;</a></h3>
+<p>Follow-up your prompts sequentially.</p>
+<p>Responses to prompts may not return the exact details or information that you are after the first time. Follow-up by rephrasing your prompts more carefully and continuing with iterative prompting can build upon your priors.</p>
+<p>"Chain prompting" or "Linked Prompting" brings multiple prompts together.</p>
+<table>
+<thead>
+<tr>
+<th>Linked Prompting</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Step 1: Priming</td>
+<td>"I want you to act as an eminent hydrologist from CUASHI. Provide me with a list of the ten most important topics in hydrology over the last decade focused around research in the global south, working with indigenous communities, and traditional ecological knowledge systems."</td>
+</tr>
+<tr>
+<td>Step 2: Summarizing</td>
+<td>"Based on the list you just created, summarize the most pressing financial challenges faced by indigenous communities in the Global South, versus indigenous communities in North America, in less than 50 words."</td>
+</tr>
+<tr>
+<td>Step 3: Try again with enabled <a href="https://www.webchatgpt.app/" target="_blank">WebChatGPT</a> or <a href="https://openai.com/blog/chatgpt-plugins#browsing" target="_blank">Browsing</a></td>
+<td>"Based on the results of web access, can you confirm the validity of the ten important topics and provide at least one reference to each."</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Instructional</strong></p>
+<p>You can also ask ChatGPT to explain complex topics or to act as a cook-book step-by-step guide. </p>
+<p>ChatGPT can provide instructional details about how to do specific tasks. </p>
+<details class="abstract">
+<summary>ChatGPT as a documentation writer</summary>
+<div class="highlight"><pre><span></span><code>I want you to act as a DIY expert. You will help me develop the skills necessary 
+to complete simple lab documentation, create tutorials and guides for beginners and experts, 
+and explain complex concepts in layman&#39;s terms using visual techniques, and develop helpful resources.
+
+I want you to create a tutorial for building and deploying a github.io website using the MkDocs Material Theme
+</code></pre></div>
+</details>
+<hr />
+<h3 id="general-prompt-traits"><strong>General Prompt Traits</strong><a class="headerlink" href="#general-prompt-traits" title="Permanent link">&para;</a></h3>
+<div class="admonition success">
+<p class="admonition-title">Strategies</p>
+<p>Keep these W's in mind when writing prompts</p>
+<table>
+<thead>
+<tr>
+<th>W's</th>
+<th>Reasons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Who</td>
+<td>do you want ChatGPT to role-play: an engineer, an editor, a teacher, or a student?</td>
+</tr>
+<tr>
+<td>What</td>
+<td>is the specific context of your prompts?</td>
+</tr>
+<tr>
+<td>When</td>
+<td>is the specific time period of interest? Specify if so.</td>
+</tr>
+<tr>
+<td>Where</td>
+<td>is the geographic region or conceptual area?</td>
+</tr>
+<tr>
+<td>In what way</td>
+<td>do you want ChatGPT to respond: in a programming language, code, text-to-image?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Syntax</strong></p>
+<p>Use <a href="https://www.markdownguide.org/basic-syntax/" target="_blank">MarkDown syntax</a> in your prompts.</p>
+<p>For code examples use single backtick ` or triple ``` for block quotes when adding your own code to your prompts.</p>
+<p><strong>Context</strong></p>
+<p>Develop a clear context around which you are seeking responses. Types of prompt help to establish the context of the responses you will recieve. </p>
+<p><strong>Precision</strong></p>
+<p>Keep your prompts precise and use clear language. Constrain the topic areas for which you wish your repsonses to be drawn from.</p>
+<p><strong>Simplicity</strong> </p>
+<p>Break down your prompts into simple tasks which do not contain too many complex tasks or ones that require rationalization. </p>
+<details class="danger">
+<summary>Indirect Prompt Injection and Malware</summary>
+<p>One of the risks of allowing LLMs and GPTs to access our personal documents and email clients involves the use of malware and malicious attacks.</p>
+<p><a href="https://www.wired.com/story/chatgpt-prompt-injection-attack-security/" target="_blank">Indirect prompt injection</a></p>
+</details>
+<h2 id="software-development"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.872zm16.597 3.855-5.833-3.387L15.119 7.2a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08-4.778 2.758a.795.795 0 0 0-.393.681zm1.097-2.365 2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5Z"/></svg></span> Software Development<a class="headerlink" href="#software-development" title="Permanent link">&para;</a></h2>
+<p>ChatGPT is trained on langauges, including software language. Use ChatGPT as your new paired-programming AI assistant. </p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 5.5a2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2 2 2 0 0 0 2 2m-3.6 13.9 1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3A7.298 7.298 0 0 0 22 13v-2c-1.76.03-3.4-.89-4.3-2.4l-1-1.6c-.36-.6-1-1-1.7-1-.3 0-.5.1-.8.1L9 8.3V13h2V9.6l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4M4 9a1 1 0 0 1-1-1 1 1 0 0 1 1-1h3v2H4m1-4a1 1 0 0 1-1-1 1 1 0 0 1 1-1h5v2H5m-2 8a1 1 0 0 1-1-1 1 1 0 0 1 1-1h4v2H3Z"/></svg></span> Go to our lesson on <a href="../github_copilot/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M21 29.5a1.5 1.5 0 0 0-3 0v4a1.5 1.5 0 0 0 3 0v-4zm9 0a1.5 1.5 0 0 0-3 0v4a1.5 1.5 0 0 0 3 0v-4z"/><path fill-rule="evenodd" d="M34.895 8.939c1.89.602 3.378 1.472 4.41 2.73 1.397 1.703 1.736 3.837 1.55 6.19l.016.032 1.684 3.79.964.193a3.5 3.5 0 0 1 2.161 1.398l1.668 2.335A3.5 3.5 0 0 1 48 27.64v4.86c0 1.058-.619 1.973-1.129 2.585-.56.673-1.273 1.308-1.934 1.836a26.506 26.506 0 0 1-2.597 1.824l-.048.029h-.001l-.012.008-.021.014-.058.035a27.766 27.766 0 0 1-1.358.773 37.77 37.77 0 0 1-3.883 1.79C33.69 42.69 29.123 44 24 44c-5.123 0-9.69-1.311-12.959-2.605a38.242 38.242 0 0 1-3.884-1.79 27.695 27.695 0 0 1-1.357-.773 9.58 9.58 0 0 1-.08-.05l-.011-.007-.001-.001-.048-.03c-.041-.025-.1-.06-.173-.107a26.538 26.538 0 0 1-2.424-1.716c-.66-.528-1.373-1.163-1.934-1.836C.619 34.473 0 33.558 0 32.5v-4.86c0-.729.228-1.44.652-2.033l1.668-2.335a3.5 3.5 0 0 1 2.161-1.398l.964-.193 1.684-3.79.015-.032c-.185-2.353.154-4.487 1.55-6.19 1.033-1.258 2.52-2.128 4.411-2.73C15.84 6.82 19.71 5.5 24 5.5c4.29 0 8.16 1.321 10.895 3.439zm2.913 9.285c-.21 1.875-.621 2.956-1.283 3.586-.169.16-.376.312-.636.445-.78.4-2.034.631-4.145.447a9.143 9.143 0 0 1-.389-.043c-1.889-.245-2.93-1.005-3.568-1.948a4.634 4.634 0 0 1-.192-.31c-.607-1.066-.897-2.503-.968-4.24-.095-2.368.35-3.665 1.021-4.31.623-.599 1.877-1.034 4.506-.514 2.668.527 4.082 1.322 4.832 2.235.721.88 1.047 2.144.869 4.174-.014.165-.03.324-.047.478zM23.643 20.5a70.806 70.806 0 0 0 .714 0c.238.666.547 1.304.946 1.894 1.263 1.866 3.286 3.044 6.18 3.297 3.115.273 5.498-.171 7.11-1.707.439-.418.792-.89 1.078-1.404l.329.74v13.327c-.163.092-.353.197-.57.312a35.236 35.236 0 0 1-3.576 1.647C32.809 39.811 28.627 41 24 41c-4.627 0-8.81-1.189-11.854-2.395a35.236 35.236 0 0 1-3.577-1.647c-.216-.115-.406-.22-.569-.312V23.318l.329-.74c.286.515.639.987 1.077 1.405 1.613 1.536 3.996 1.98 7.111 1.707 2.894-.253 4.917-1.431 6.18-3.297.4-.59.708-1.228.946-1.894zm-12.514.907c.107.152.222.286.346.404.675.643 1.966 1.138 4.78.892 2.139-.187 3.277-.985 3.958-1.99.067-.1.131-.203.192-.31.607-1.067.897-2.504.968-4.242.095-2.367-.35-3.664-1.021-4.309-.623-.599-1.877-1.034-4.506-.514-2.668.527-4.082 1.322-4.832 2.235-.721.88-1.047 2.144-.869 4.174.157 1.796.474 2.934.984 3.66zM22.5 17a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1z"/></svg></span> GitHub CoPilot</a></p>
+<p>For novice programmers, ChatGPT likely fills a long unfilled hole in your knowledge map. It can write code faster than you can, and with the proper prompts, create programs in minutes which may have taken you hours or days. </p>
+<details class="abstract">
+<summary>Linux Guru</summary>
+<p>ChatGPT is trained on common data science languages, like Python, Julia, and R. Use ChatGPT to help develop basic code or to explain and debug code you're trying to write. </p>
+<p>Using ChatGPT can be a time savings, reducing the time it takes to look for the answers yourself over conventional search.</p>
+<div class="highlight"><pre><span></span><code>I want you to act as a humble data scientist who works a lot with Python and scientific visualization
+
+Create a Python script which generates a visually pleasing and compelling heat map for a CSV dataset
+</code></pre></div>
+<p>You can also use it to summarize code or to help explain its operation</p>
+<div class="highlight"><pre><span></span><code>I want you to act as a humble data scientist who works a lot with Linux 
+
+Explain to me what the following code does:
+
+$ find /home/www \( -type d -name .git -prune \) -o -type f -print0 | xargs -0 sed -i &#39;s/subdomainA\.example\.com/subdomainB.example.com/g&#39;
+</code></pre></div>
+<p>Other valuable uses:</p>
+<ul>
+<li>
+<p>Change variable names and file names! When you have a large dataset with many files and folder names, you can ask ChatGPT to help design a schema for renaming your project's content</p>
+</li>
+<li>
+<p>Regular Expressions, or <code>regex</code> is a bane of many programmers. ChatGPT can write, edit, and explain complex <code>regex</code></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code>I want you to act as a regex generator. Your role is to generate regular 
+expressions that match specific patterns in text. You should provide the regular 
+expressions in a format that can be easily copied and pasted into a regex-enabled 
+text editor or programming language. Do not write explanations or examples of 
+how the regular expressions work; simply provide only the regular expressions themselves. 
+
+remove any numbers from a string and replace them with a capital X
+</code></pre></div>
+</details>
+<p>For more advanced programmers, ChatGPT's weaknesses may become apparent when optimizing or linting complex code bases. However, there are already extension tools which can evaluate code performance and make changes or suggestions. </p>
+<details class="abstract">
+<summary>DevOps Engineer</summary>
+<p>ChatGPT can automate tasks and write tests</p>
+<div class="highlight"><pre><span></span><code>I want you to act as a DevOps engineer who specializes in SQL and Docker.
+
+I am running an Ubuntu 22.04 server with a dockerized web service which appears to have a memory leak. Write a unit test for the PostgreSQL web server using SQL, JSON, or Python that can find the process which is causing the leak and restart the docker-compose service.
+</code></pre></div>
+<p>You can also use ChatGPT to help optimize your code's performance.</p>
+<div class="highlight"><pre><span></span><code>Make this code run faster and use less memory using BASH
+
+<span class="sb"> ```</span>
+<span class="sb"> import os </span>
+<span class="sb"> # folder path</span>
+<span class="sb"> dir_path = os.getcwd()</span>
+<span class="sb"> # list to store files</span>
+<span class="sb"> res = [] </span>
+<span class="sb"> # Iterate directory</span>
+<span class="sb"> for path in os.listdir(dir_path):</span>
+<span class="sb">     # check if current path is a file</span>
+<span class="sb">     if os.path.isfile(os.path.join(dir_path, path)):</span>
+<span class="sb">         res.append(path)</span>
+<span class="sb"> print(res)</span>
+<span class="sb"> ```</span>
+</code></pre></div>
+</details>
+<h2 id="word-processing"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.872zm16.597 3.855-5.833-3.387L15.119 7.2a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08-4.778 2.758a.795.795 0 0 0-.393.681zm1.097-2.365 2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5Z"/></svg></span> Word Processing<a class="headerlink" href="#word-processing" title="Permanent link">&para;</a></h2>
+<p><strong>Outlining</strong></p>
+<p>ChatGPT can help to create outlines for any type of writing. This can help get beyond a blank page problem.</p>
+<details class="abstract">
+<summary>Getting ideas on paper</summary>
+<p>Create a basic outline about an idea that you want to work on</p>
+<div class="highlight"><pre><span></span><code>Create a title and sections for a student data challenge with 
+three sections and no more than three subsections each. The challenge should be about
+using Earth Observation System data from NASA and European Space Agency to diagnose 
+environmental change and human societies.
+</code></pre></div>
+</details>
+<p><strong>Editing</strong></p>
+<p>Proof-reading, removing passive voice, rewording for clarity and readability are all potential features that can be prompted from ChatGPT.</p>
+<p>When establishing the role of the responses, consider </p>
+<p><strong>Summarizing</strong></p>
+<p>When small or large groups are working together to synthesize discussions around scientific research, they often maintain the discussion topics in large sets of notes with many contributions.</p>
+<p>Use ChatGPT to summaries a day or a week's worth of notes. Include the schedule or agenda and ask ChatGPT to summarize whether the agenda met the topics of interest, or even suggest directions which went unexplored. </p>
+<p><strong>Translation</strong></p>
+<p>ChatGPT can be used for translating languages, and for specifying regional dialect translation. </p>
+<p>Althought it was not specifically designed for language translation, it does a relatively good job at most major languages to English.</p>
+<p>For English as a Second Language (ESL) speakers, ChatGPT utility in writing more formal or professional text is likely of high value. </p>
+<p><strong>Writing</strong></p>
+<p>While it is unethical to allow ChatGPT to write original research on your behalf, you can use it to help write technical documentation, recipes, or how-to-lists for yourself or a lab group.</p>
+<p>You can use also ChatGPT to draft email responses or to write letters, although doing so autonomously is unprofessional and potentially unethical conduct.</p>
+<details class="tip">
+<summary>ChatGPT timing out without completing its responses?</summary>
+<p>When generating a long set of results, ChatGPT may time out after 60 seconds. </p>
+<p>You can resume the output of the prompt by telling it to 'continue'. For text:</p>
+<div class="highlight"><pre><span></span><code> continue
+</code></pre></div>
+<p>or for code response:</p>
+<div class="highlight"><pre><span></span><code> continue 
+ ```
+</code></pre></div>
+</details>
+<h2 id="tuning"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.051 6.051 0 0 0 6.515 2.9A5.985 5.985 0 0 0 13.26 24a6.056 6.056 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.056 6.056 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.141-.081 4.779-2.758a.795.795 0 0 0 .392-.681v-6.737l2.02 1.168a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.494 4.494zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.783 2.759a.771.771 0 0 0 .78 0l5.843-3.369v2.332a.08.08 0 0 1-.033.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.168a.076.076 0 0 1-.071 0l-4.83-2.786A4.504 4.504 0 0 1 2.34 7.872zm16.597 3.855-5.833-3.387L15.119 7.2a.076.076 0 0 1 .071 0l4.83 2.791a4.494 4.494 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.407-.667zm2.01-3.023-.141-.085-4.774-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.897a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08-4.778 2.758a.795.795 0 0 0-.393.681zm1.097-2.365 2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5Z"/></svg></span> Tuning<a class="headerlink" href="#tuning" title="Permanent link">&para;</a></h2>
+<p>You can include Linux command line flags in your prompts,</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Parameter name</th>
+<th style="text-align: center;">Use</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Answers</td>
+<td style="text-align: center;"><code>-a</code> or <code>--answers</code></td>
+<td style="text-align: left;">Specifies the number of output answers (default is 1)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Category</td>
+<td style="text-align: center;"><code>-c</code> or <code>--category</code></td>
+<td style="text-align: left;">Specifies the category of prompt (coding, creative, factual, fun, general, music, news, science, sports and writing)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Format</td>
+<td style="text-align: center;"><code>-f</code> or <code>--format</code></td>
+<td style="text-align: left;">Specifies the format of output ("html", "markdown", "plain text", other)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Language</td>
+<td style="text-align: center;"><code>-l</code> or <code>--language</code></td>
+<td style="text-align: left;">Specifies the required language of output</td>
+</tr>
+<tr>
+<td style="text-align: center;">Size</td>
+<td style="text-align: center;"><code>-s</code> or <code>--size</code></td>
+<td style="text-align: left;">Specifies the maximum number of characters in the output</td>
+</tr>
+<tr>
+<td style="text-align: center;">Temperature</td>
+<td style="text-align: center;"><code>-t</code> or <code>--temperature</code></td>
+<td style="text-align: left;">Control the creativity of output. The higher the temperature will result in more creative output (maybe less coherent). The temperature can be any value between 0 and 1 (default may be 0.5)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="assessment">Assessment<a class="headerlink" href="#assessment" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>How long can a prompt be?</summary>
+<div class="admonition answer">
+<p class="admonition-title">Well, it depends</p>
+<p>A good rule of thumb, depending on the platform, is at most 1,500 words or 3-5 pages of text. </p>
+<p>For larger, newer GPTs the length of a prompt may be up to 100 pages.</p>
+</div>
+</details>
+<details class="question">
+<summary>True or False: ChatGPT has access to web browsing by default</summary>
+<div class="admonition failure">
+<p class="admonition-title">False</p>
+<p>ChatGPT cannot access the internet and is only trained until current events in September of 2021</p>
+<p>Alpha Plugins for ChatGPT have browsing, but are waitlisted.</p>
+<p>Third-party plugins like WebChatGPT can enable browsing, but its results are not optimal.  </p>
+<p>Bing Chat, and Bard both have access to the internet, and can generate responses to current events.</p>
+</div>
+</details>
+<details class="question">
+<summary>Short, concise, prompts are better than long meandering prompts?</summary>
+<div class="admonition answer">
+<p class="admonition-title">it depends</p>
+<p>Prompts should be specific, but they do not necessarily need to be concise.</p>
+<p>Zero-shot prompts are less likely to return an accurate response than one where you prime the model, establishing a role, a task, and the format of the result you are looking for.</p>
+<p>Chained or linked prompting can also build a more specific response which relates to what you're looking for. </p>
+</div>
+</details>
+<details class="question">
+<summary>True or False: GPTs produce factually incorrect information</summary>
+<div class="admonition success">
+<p class="admonition-title">True</p>
+<p>GPTs have the tendency to generate factually incorrect information, along with details that appear to be factually correct.</p>
+<p>If you do not have the ability to discern the truth of a response, relying upon GPTs to generate legal, health, or scientific content is to be avoided. </p>
+<p>Using GPTs to produce content which will be used in decision making for health, research, or government is unethical and may be illegal.</p>
+</div>
+</details>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2024-02-06
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../bard/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Bard" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Bard
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../daily-productivity/" class="md-footer__link md-footer__link--next" aria-label="Next: Daily Productivity" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Daily Productivity
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 University of Arizona Data Science Institute
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/ua-data7/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "toc.integrate", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
