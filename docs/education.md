@@ -3,9 +3,9 @@
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="128">  
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Thinking about integrating ChatGPT and OpenAI into your coursework?
+Are you thinking about integrating ChatGPT and OpenAI into your coursework?
 
-There are already a large list of potentail uses for ChatGPT in higher education
+There is already a large list of potential uses for ChatGPT in higher education.
 
 Read about [:simple-openai: OpenAI Educator Considerations](https://platform.openai.com/docs/chatgpt-education/educator-considerations-for-chatgpt){target=_blank}
 
@@ -19,13 +19,13 @@ Proponents of integrating ChatGPT into educational curricula [(:simple-newyorkti
 
     [ChatGPT for Teachers by We Are Teachers](https://www.weareteachers.com/chatgpt-for-teachers/){target=_blank}
 
-    [Using AI in the Classrom by University of Wisconsin Madison](https://idc.ls.wisc.edu/guides/using-artificial-intelligence-in-the-classroom/){target=_blank}
+    [Using AI in the Classroom by University of Wisconsin Madison](https://idc.ls.wisc.edu/guides/using-artificial-intelligence-in-the-classroom/){target=_blank}
 
     [ChatGPT Resources for Faculty by University of Pittsburg](https://teaching.pitt.edu/resources/chatgpt-resources-for-faculty/){target=_blank}
 
     [AI in the Classroom by Greylock Podcast](https://greylock.com/greymatter/ai-in-the-classroom/){target=_blank}
 
-    [How to handle AI in Schoools by CommonSense.org](https://www.commonsense.org/education/articles/chatgpt-and-beyond-how-to-handle-ai-in-schools){target=_blank}
+    [How to handle AI in Schools by CommonSense.org](https://www.commonsense.org/education/articles/chatgpt-and-beyond-how-to-handle-ai-in-schools){target=_blank}
 
 ## Guiding Graduate Students and Postdoctoral Researchers in AI Usage
 
@@ -35,7 +35,7 @@ Platforms like ChatGPT could potentially become the primary mentor for graduate 
 
 To achieve this balance, advisors should:
 
-**Encourage AI literacy**: Provide students with resources and opportunities to learn about AI technologies, their applications, and limitations.
+**Encourage AI literacy**: Provide students with resources and opportunities to learn about AI technologies, their applications, and their limitations.
 
 **Teach responsible AI usage**: Emphasize the importance of using AI as a tool to support research, not replace critical thinking and problem-solving skills.
 
@@ -47,7 +47,7 @@ To achieve this balance, advisors should:
 
 By incorporating AI into graduate and postdoctoral training while maintaining a focus on ethics and responsibility, the next generation of researchers can harness the power of AI to advance their fields while upholding the highest standards of academic integrity.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I will no longer approve graduate student dissertation proposals or dissertations unless they used ChatGPT or a similar AI to help them write part it! (With appropriate acknowledgement). Yes I am serious! <br><br>We&#39;re training PhDs to think, not to be robots.</p>&mdash; Seth (@DrSethMurray) <a href="https://twitter.com/DrSethMurray/status/1643353489341394945?ref_src=twsrc%5Etfw">April 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I will no longer approve graduate student dissertation proposals or dissertations unless they used ChatGPT or a similar AI to help them write part of it! (With appropriate acknowledgment). Yes, I am serious! <br><br>We&#39;re training PhDs to think, not to be robots.</p>&mdash; Seth (@DrSethMurray) <a href="https://twitter.com/DrSethMurray/status/1643353489341394945?ref_src=twsrc%5Etfw">April 4, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Integrating LLMs into Research and Education
 
@@ -62,7 +62,7 @@ We strongly encourage faculty and research teams to explore how they can incorpo
 | Multiple-choice questions | `Generate multiple choice questions on this: {paste material or give topic}` |
 | Create flashcards | `Create flashcards on this topic for me: {paste material or give topic}` | 
 | Improve text/explanation | `How can the following text/explanation about {topic} be improved?: {paste text}` | 
-| Mnemonics | `Help me remember the 5 most common fact/properties about {topic}` |
+| Mnemonics | `Help me remember the 5 most common facts/properties about {topic}` |
 | Historical or factual events | `Help me memorize US History` |
 | **Formulas and equations assistance** | | 
 | Step-by-step instructions | `Find the derivative of f(x) = 3x^3 + 2x^2 + 1` | 
@@ -73,7 +73,7 @@ We strongly encourage faculty and research teams to explore how they can incorpo
 
 ## ChatGPT and Bard used in academic and essay writing
 
-Both ChatGPT/Bard can help you in the following tasks:
+Both ChatGPT/Bard can help you with the following tasks:
 
 1. _Summarization_: Can provide brief overviews of lengthy articles, helping to summarize their content.
 
@@ -81,7 +81,7 @@ Both ChatGPT/Bard can help you in the following tasks:
 
 3. _Research assistance_: Can assist with research by generating relevant articles, academic papers, and other sources that can be used as references for your work.
 
-Topic explanation includes:
+The topic explanation includes:
 
 1. _Definitions_: By entering a keyword or phrase, can generate a definition and provide context to help you understand the meaning of the term.
 
@@ -96,19 +96,19 @@ A variety of commands makes ChatGPT/Bard a flexible tool that can contribute to 
 ## Teaching and learning with ChatGPT and Bard
 
 [ChatGPT](https://chat.openai.com/) and [Bard](https://bard.google.com/) can improve teaching and learning processes by generating and
- assessing information, and can be used as a standalone tool or 
+ assessing information and can be used as a standalone tool or 
 integrated into other systems. It can perform simple or technical tasks 
 and examples show how it can augment teaching and learning.
 
 | Role playing | Description | Example of implementation |
 | :-- | :-- | :-- |
 | **Possibility engine** | AI can suggest alternative ways to express an idea | Students can write queries in ChatGPT/Bard and use the "Regenerate" response function to explore alternative responses. |
-| **Socratic opponent** | AI can act as an opponent to develop and argument | Students can enter prompts into ChatGPT/Bard, using the  structure of a conversation or debate. Teachers can ask their students  to use ChatGPT/Bard to prepare for discussions. |
+| **Socratic opponent** | AI can act as an opponent to develop an argument | Students can enter prompts into ChatGPT/Bard, using the  structure of a conversation or debate. Teachers can ask their students  to use ChatGPT/Bard to prepare for discussions. |
 | **Collaboration coach** | AI helps groups to research and solve problems together | When completing tasks and assignments, students can use ChatGPT/Bard to find information while working in groups. | 
-| **Guide on the side** | AI acts as a guide to navigate physical and conceptual spaces | Teachers use ChatGPT/Bard to generate content for their  classes or courses, such as discussion questions, and to seek advice on  how to support students in learning specific concepts. |
+| **Guide on the side** | AI acts as a guide to navigating physical and conceptual spaces | Teachers use ChatGPT/Bard to generate content for their  classes or courses, such as discussion questions, and to seek advice on  how to support students in learning specific concepts. |
 | **Personal tutor** | AI tutors each student and gives immediate feedback on progress | ChatGPT/Bard provides personalized feedback to students based on information provided by students or teachers (e.g., test scores). |
 | **Co-designer** | AI assists throughout the design process | Teachers can seek ideas from ChatGPT/Bard for designing or  updating a curriculum, including rubrics for assessment. Alternatively,  they can focus on specific goals, such as making the curriculum more  accessible. ChatGPT can provide recommendations and suggestions to help  achieve these objectives. |
-| **Exploratorium**  | AI provides tools to play with, explore and interpret data | Teachers provide basic information to students who  write different queries in ChatGPT to find out more. ChatGPT/Bard can be used  to support language learning. |
+| **Exploratorium**  | AI provides tools to play with, explore, and interpret data | Teachers provide basic information to students who  write different queries in ChatGPT to find out more. ChatGPT/Bard can be used  to support language learning. |
 | **Study buddy** | AI helps the student reflect on learning material | Students explain their current level of understanding  to ChatGPT/Bard and ask for ways to help them study the material. ChatGPT/Bard  could also be used to help students prepare for other tasks (e.g., job  interviews). |
 | **Motivator** | AI offers games and challenges to extend learning | Teachers or students ask ChatGPT/Bard for ideas about how to  extend students’ learning after providing a summary of the current  level of knowledge (e.g., quizzes, exercises). |
 | **Dynamic assessment** | AI provides educators with a profile of each student’s current knowledge | Students engage in a tutorial-style dialogue with  ChatGPT/Bard, and then request that ChatGPT/Bard create a summary of their current  knowledge for sharing with their teacher or for assessment purposes. |
@@ -125,7 +125,7 @@ sector is unclear.
 Skeptics say chatbots harm learning, but they disrupt traditional 
 tools like essay writing. With a shortage of 69 million teachers 
 worldwide, could ChatGPT or Bard supplement or replace them? The launch of 
-ChatGPT and Bard shows potential to replace some human tasks. Are teachers an 
+ChatGPT and Bard show potential to replace some human tasks. Are teachers an 
 exception? Can chatbots complete tasks currently done by teachers? What 
 are the risks? How can teachers use ChatGPT and Bard to improve their practice 
 and efficiency?
@@ -169,8 +169,8 @@ human emotions or subjective perspectives.
 * **Grading assessment and papers**. ChatGPT/Bard can be used 
 to automatically grade multiple-choice/one-answer tests; it can also 
 help teachers with standards-based grading.  This has potential 
-unintended consequences for low accuracy, poor grading or false positive
- proctoring (mistakenly red flagging students for cheating). When 
+unintended consequences for low accuracy, poor grading, or false positive
+ proctoring (mistakenly red-flagging students for cheating). When 
 considering systems for proctoring or grading, it is critical to take 
 measures to secure fairness, accountability, confidentiality, and 
 transparency of their algorithms whenever needed.
@@ -182,6 +182,7 @@ transparency of their algorithms whenever needed.
 * [Using ChatGPT and Bard in Higher Education Teaching Environments](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Using-ChatGPT-and-Bard-in-Higher-Education) | [Presentation](https://tinyurl.com/UAD7ChatGPT-HE). 
 * [Prompt Engineering Basics for Education](https://github.com/clizarraga-UAD7/MLWorkshops/wiki/Prompt-Engineering-Basics)
 * [AI Tools Landscape](https://github.com/ua-data7/LearningResources/wiki/AI-Tools-Landscape)
+* [AIPRM’s Ultimate Generative AI Glossary](https://www.aiprm.com/ai-glossary/) (STEM Club Fuller Library collaboration).
 
 ***
 
@@ -198,6 +199,6 @@ transparency of their algorithms whenever needed.
 
 ***
 
-Created: 05/28/2023 (C. Lizárraga); Last update: 06/08/2023 (C. Lizárraga)
+Created: 05/28/2023 (C. Lizárraga); Last update: 02/06/2024 (C. Lizárraga)
 
 <img src="https://datascience.arizona.edu/sites/default/files/Data%20Science%20Institute_Webheader%20%281%29.svg" width="256">
